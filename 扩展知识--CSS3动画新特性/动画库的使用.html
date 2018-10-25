@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>动画库的使用</title>
+    <!--引入animate动画库文件-->
+    <link rel="stylesheet" href="animate.css">
+    <script src="jquery-2.0.3.js"></script>
+    <style>
+        div {
+            width:200px;
+            height:200px;
+            background:red;
+            margin:10px auto;
+        }
+        /*常用的伪类的用法*/
+        /*div:active {*/
+        /*animation-name:pulse;*/
+        /*}*/
+        /*div:hover {*/
+        /*animation-name:pulse;*/
+        /*}*/
+        /*div:focus {*/
+        /*animation-name:pulse;*/
+        /*}*/
+        .change {
+            animation-name:swing;
+        }
+        section {
+            width:200px;
+            height:200px;
+            background:green;
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body>
+<!--第一步添加class属性为animated,bounce-->
+<div class="animated bounce"></div>
+<!--flash动画,只改变了透明度-->
+<div class="animated flash"></div>
+<!--放大一点-->
+<div class="animated pulse"></div>
+<!--果冻效果-->
+<div class="animated rubberBand"></div>
+<!--晃动效果-->
+<div class="animated shake"></div>
+<!--轻微晃动的效果-->
+<div class="animated headShake"></div>
+<div class="animated swing"></div>
+<section class="animated"></section>
+</body>
+</html>
+<script>
+    $(function(){
+        $('section').click(function(event){
+            var e = event || window.event;
+            e.preventDefault();
+//            alert(typeof this);
+            $('section').toggleClass('change');
+        });
+    })
+
+</script>

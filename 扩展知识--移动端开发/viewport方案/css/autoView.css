@@ -1,0 +1,26 @@
+
+
+*{
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   font-family: '微软雅黑';
+}
+img{
+    display: block;
+}
+/* 当前页面的最外层父元素 (以手机宽度640px为标准)*/
+.page-outer-wrap{
+   width: 640px;
+   margin: 0 auto;
+   border: 1px solid #f00;
+   box-sizing: border-box;
+}
+
+.auto-img1{
+    width: 640px;
+}
+
+.auto-img2{
+    width: 320px;
+}

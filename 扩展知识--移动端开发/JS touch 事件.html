@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #box {
+            width:50px;
+            height:50px;
+            background:red;
+            position:absolute;
+        }
+
+
+    </style>
+</head>
+<body>
+<!--Touch事件：
+
+1 touchstart:当一个手指放在屏幕上时触发；
+2 touchend:当一个手指从屏幕上移走的时候触发；
+3 touchmove:当一个手指已经在屏幕上并且在屏幕上移动时触发；
+4 touchcancel:如果太多个手指在屏幕上或一个其他动作发生时触发。
+
+Touch事件中事件对象的属性：
+
+1 touches: 它包含了每个手指当前touch屏幕的一系列信息；
+2 targetTouches: 像touches一样，但是提供当前手指的touch信息；
+3 changedTouches: 包含每一个手指的touch改变的信息。
+
+怎么理解呢:
+
+1. 当你放下一个手指的时候，上面三个属性会提供相同的信息；
+
+2. 当你放下第二个手指的时候,touches对象会包含两条信息，每个手指都有一个；
+targetTouches只有在第二根手指放在了同第一根手指相同的节点上的时候会
+包含两条信息（否则的话它只包含第二根手指的信息）；
+changedTouches只会包含跟第二根手指相关的信息.
+
+3. 如果几乎同是两个手指触碰屏幕，在changedTouches中会有两个手指的信息。
+
+4. 如果我们在屏幕上移动手指，唯一会改变的对象是changedTouches，
+它会包含我们移动的一个或两个手指的信息；
+
+5. 如果抬起一个手指，它的信息会从touches和targetTouches对象中移除，
+但是在changedTouches会找到它的信息；
+
+6. 当我们把最后一个手指从屏幕上移走，touches和targetTouches对象会为空了，
+但是changedTouches将会保留最后这跟手指的信息。
+
+touches对象中包含的每个手指的信息列表中也有下面这些我们在鼠标事件中熟悉的属性：
+
+1 identifier - 一个标识符，对于每个touch点（手指）是独一无二的；
+2 target -当前手指touch的dom节点；
+3 clientX/clientY -touch事件发生时相对视口(viewport)的坐标(包含滚动)
+4 screenX/screenY -相对于屏幕的坐标
+5 pageX/pageY -相对于整个文档的坐标-->
+
+
+<!--总结：系统级别的API目前只有上述三个，要想得到更加复杂的手势操作，必须自己封装或者使用插件形式，例如向上、向下、向左、向右的滑动、旋转、多角度的滑动等多种多样的手势。-->
+<!--这些事件，在JQ中是没办法使用的，必须使用原生JSaddEventlister来添加，对于简单的还好说，复杂的我们就必须引入插件来解决了。-->
+<div id="box"></div>
+</body>
+</html>
+<script>
+    //给文档添加touch事件，同样可以作用于DOM元素的触屏事件，start鼠标放在某个位置上
+    //一般都是给自己的文档对象添加触屏事件，如果对单个的DOM元素进行touch事件，除非是拖拽，否则没有特别大的意义。
+    //一般我们都是在文档的某个地方进行滑动，某个东西出现。
+    /*document.addEventListener('touchstart',start,false);
+    function start(e){
+        //发生触屏事件的DOM元素,就是绑定的元素本身
+        //console.log(e);
+        //手指的位置
+        console.log(e.touches[0].clientX);
+        console.log(e.touches[0].clientY);
+
+    }
+    document.addEventListener('touchmove',move,false);
+    function move(e){
+        //alert(2);
+        //手指的位置
+        console.log(e.touches[0].clientX);
+        console.log(e.touches[0].clientY);
+    }
+    document.addEventListener('touchend',end,false);
+    function end(e){
+        alert(3);
+    }*/
+    /*单指拖动*/
+    var obj = document.getElementById('box');
+    obj.addEventListener('touchmove', function(event) {
+        // 如果这个元素的位置内只有一个手指的话
+        if (event.targetTouches.length == 1) {
+            event.preventDefault();// 阻止浏览器默认事件，重要
+            var touch = event.targetTouches[0];
+            // 把元素放在手指所在的位置
+            obj.style.left = touch.pageX-50 + 'px';
+            obj.style.top = touch.pageY-50 + 'px';
+        }
+    }, false);
+
+
+
+</script>

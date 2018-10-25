@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html style="font-size:100px;">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="moblie-js/jquery-2.0.3.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <style>
+        * {
+            box-sizing:border-box;
+        }
+        html,body {
+            margin:0;
+            padding:0;
+            border:0;
+            font-size:14px;
+        }
+        @media (min-width:320px){
+            body {
+                font-size:14px;
+            }
+
+        }
+        @media (min-width:480px){
+            body {
+                font-size:18px;
+            }
+        }
+        @media (min-width:540px){
+            body {
+                font-size:20px;
+            }
+        }
+        @media (min-width:640px){
+            body {
+                font-size:34px;
+            }
+        }
+        .pic {
+            height:1.08rem;
+        }
+        img {
+            width:100%;
+            display:block;
+        }
+        .nav {
+            width:100%;
+            height:3rem;
+            position:fixed;
+            bottom:0;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav a {
+            flex:1;
+            text-align:center;
+        }
+        .nav a img {
+            width:0.4rem;
+            height:0.4rem;
+            margin:0 auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <!--大图-->
+        <div class="pic">
+            <img src="http://s1.mi.com/m/images/20151027/ios.png">
+        </div>
+        <!--搜索框-->
+        <div class="search">
+            <input type="text">
+        </div>
+        <!--产品列表-->
+        <div class="items">
+            <div class="img">
+                <img src="image/...">
+            </div>
+            <div class="info">
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+        <!--固定的导航-->
+        <div class="nav">
+            <a href="#">
+                <img src="image/icon.jpg">
+                <p>商城</p>
+            </a>
+            <a href="#">
+                <img src="image/icon.jpg">
+                <p>商城</p>
+            </a>
+            <a href="#">
+                <img src="image/icon.jpg">
+                <p>商城</p>
+            </a>
+            <a href="#">
+                <img src="image/icon.jpg">
+                <p>商城</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(function(){
+        function fullWidth(){
+            if($('body').width() >= 720){
+                $('html').css('font-size',100 + 'px');
+                return ;
+            }
+            var scale = $('body').width() / 720;
+            $('html').css('font-size', 100 * scale + 'px');
+        };
+        fullWidth();
+        $(window).resize(function(){
+            fullWidth();
+        });
+    });
+</script>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <title>自适应手机屏幕</title>
+    <meta charset="utf-8"/>
+    <!--1 手机缩放适配-->
+    <meta name="viewport" content="width=640,minimum-scale=0.5,maximum-scale=0.5,initial-scale=0.5" />
+    <!--2 引入自适应的脚本 autoview.js -->
+    <script src="js/autoview.js" type="text/javascript" charset="utf-8"></script>
+    <!--3 引入 jquery库 -->
+    <script src="../moblie-js/jquery-2.0.3.js"></script>
+    <link rel="stylesheet" href="css/autoView.css" type="text/css" media="screen" charset="utf-8"/>
+</head>
+<body>
+	<!-- 当前整个页面的父元素 -->
+	<div id="page-outer-wrap" class="page-outer-wrap">
+        <h1>通过viewport，自适应手机尺寸</h1>
+		<h1>一级测试标题</h1>
+		<h2>二级测试标题</h2>
+		<h3>三级测试标题</h3>
+        <p>p文本段落</p> <br>
+        <h2>内部的img也会自适应手机屏幕</h2>
+        <h3>横向img</h3>
+        <img class="auto-img1" src="image/auto-img1.jpg" alt=""/>
+        <h3>纵向img</h3>
+        <img class="auto-img2" src="image/auto-img2.jpeg" alt=""/>
+	</div>
+</body>	
+ 

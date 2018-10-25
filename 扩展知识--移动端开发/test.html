@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--默认，你在手机端打开PC网站的时候，默认手机浏览器会给你一个虚拟的窗口-->
+    <!--这个窗口的大小是980PX,那么，针对那些专门在移动端显示的网页，需要将-->
+    <!--视口的大小设置为设备的大小-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <style>
+        *,html,body {
+            margin:0;
+            padding:0;
+            border:0;
+            box-sizing:border-box;
+        }
+        ul,ol,dl,li {
+            list-style:none;
+        }
+        .container {
+            /*width:100%;
+            height:auto;*/
+        }
+        header {
+            height:1rem;
+            background-color:#e2e2e2;
+        }
+        main {
+            height:5rem;
+            background:#fff;
+        }
+        footer {
+            height:1rem;
+            background:#000;
+        }
+        main {
+            zoom:1;
+            overflow:hidden;
+        }
+        main .left {
+            width:50%;
+            height:5rem;
+            background:darkgreen;
+            float:left;
+        }
+        main .right {
+
+            width:50%;
+            height:5rem;
+            float:left;
+            background:darkblue;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!--头部-->
+    <header></header>
+    <!--中间部分-->
+    <main>
+        <div class="left"></div>
+        <div class="right"></div>
+    </main>
+    <!--尾部-->
+    <footer></footer>
+</div>
+</body>
+</html>
+<script>
+    (function(window,document){
+        var viewWidth = 720;
+        var pick = viewWidth / 100;
+        var mode = "resize";
+        function change(){
+            var view = document.documentElement.clientWidth || window.innerWidth;
+
+            if(view >= 720){
+                document.getElementsByTagName('html')[0].style.fontSize = 100 + 'px';
+                return;
+            }
+            document.getElementsByTagName('html')[0].style.fontSize = view / pick + 'px';
+        }
+        window.addEventListener(mode,change,!1);
+        window.document.addEventListener('DOMContentLoaded',change,!1);
+    })(window,document);
+</script>

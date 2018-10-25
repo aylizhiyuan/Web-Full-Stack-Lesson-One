@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--禁止浏览器缩放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <!--IOS私有属性，可以添加到主屏幕-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--屏幕顶部条的颜色-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--iPhone 手机上设置手机号码不被显示为拨号链接）-->
+    <meta name="format-detection" content="telephone=no">
+    <!--清除浏览器缓存-->
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <!--设置PC端浏览器title左上角的图标-->
+    <link rel="shortcut icon" href="" type="image/png">
+    <link rel="icon" href="" type="image/png">
+    <!--当我把网站添加到手机桌面的时候，显示的图标和标题-->
+    <meta name="apple-mobile-web-app-title" content="李志远">
+    <link rel="apple-touch-icon" sizes="57x57" href="" />
+    <link rel="apple-touch-icon" sizes="72x72" href="" />
+    <link rel="apple-touch-icon" sizes="114x114" href="" />
+    <link rel="apple-touch-icon" sizes="144x144" href="" />
+    <!--webapp启动的时候，需要指定启动画面-->
+    <link rel="apple-touch-startup-image" href="">
+    <link rel="apple-touch-startup-image" href="" media="(device-width: 375px)">
+    <title>移动端的常用写法</title>
+    <link rel="stylesheet" href="moblie-css/animate.css"/>
+    <link rel="stylesheet" href="moblie-css/swiper.3.2.0.min.css"/>
+    <script type="text/javascript" src="moblie-js/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="moblie-js/fastclick.js"></script>
+    <script type="text/javascript" src="moblie-js/swiper.3.2.0.jquery.min.js"></script>
+    <!--支持H5标签和媒体查询-->
+    <!--[if lt IE 9]>
+    <script src="scripts/css3-mediaqueries.js"></script>
+    <script src="scripts/html5shiv.js"></script>
+    <![endif]-->
+    <!--支持CSS3伪类和属性选择器-->
+    <!--[if lte IE 8]>
+    <script src="scripts/selectivizr.js"></script>
+    <![endif]-->
+    <style>
+        /*全局样式的设置*/
+        @charset "utf-8";
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        * {
+            tap-highlight-color: rgba(0,0,0,0);
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            -ms-tap-highlight-color: rgba(0,0,0,0);
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        input, textarea {
+            outline: 0;
+            resize: none;
+
+        }
+        ul,ol {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+        }
+        body {
+            background: #f5f5f5;
+            height:100%;
+            /* 默认的系统字体是16PX，这里字体样式不同，具体的字体大小也是不一样的 */
+            font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+            line-height: 1;
+            padding: 0;
+            min-width: 320px;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        /*所有的整体布局*/
+        #wrapper {
+
+        }
+        header {
+            min-width:320px;
+            max-width:640px;
+            margin:0 auto;
+            background-color: #333;
+        }
+        #banner {
+            min-width:320px;
+            max-width:640px;
+            margin:0 auto;
+            height:300px;
+        }
+        #search {
+            min-width:320px;
+            max-width:640px;
+            margin:0 auto;
+        }
+        footer {
+            min-width:320px;
+            max-width:640px;
+            margin:0 auto;
+        }
+        .floor {
+            background-color: #fff;
+            margin-bottom: 8px;
+            box-shadow: 0 1px 1px #ebebeb;
+        }
+        .floor1 {
+            padding:0 5px;
+            min-width:320px;
+            max-width:640px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .floor2 {
+            padding:0 5px;
+            min-width:320px;
+            max-width:640px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .floor3 {
+            padding:0 5px;
+            min-width:320px;
+            max-width:640px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .floor4 {
+            padding:0 5px;
+            min-width:320px;
+            max-width:640px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        /*小布局开始*/
+
+        /*导航*/
+        .nav-list {
+            height:45px;
+            line-height:45px;
+            color: #eee;
+        }
+        .nav-list ul:after {
+            clear: both;
+            content: ".";
+            height: 0;
+            visibility: hidden;
+            font-size: 0;
+            display: block;
+        }
+        .nav-list ul li {
+            width:25%;
+            float:left;
+            text-align:center;
+        }
+        .nav-list ul li a {
+            display:block;
+            color: #eee;
+        }
+        .nav-list ul li a:hover,.nav-list ul li.active {
+            background-color: red;
+        }
+        /*图片轮播*/
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+
+        /*tab切换*/
+        .tabs input[type=radio] {
+            position:absolute;
+            top:-9999px;
+            left:-9999px;
+        }
+        .tabs {
+            width:100%;
+            float:none;
+            list-type:none;
+            position:relative;
+            padding:0;
+            margin:0 auto;
+            height:115px;
+
+        }
+        .tabs:after {
+            clear: both;
+            content: ".";
+            height: 0;
+            visibility: hidden;
+            font-size: 0;
+            display: block;
+        }
+        .tabs li {
+            float:left;
+        }
+        .tabs label {
+            display:block;
+            padding:10px 20px;
+            border-radius: 10px 10px 0 0 ;
+            color:#08c;
+            font-size:24px;
+            font-weight:normal;
+            background: rgba(255,255,255,0.2);
+            cursor: pointer;
+            position: relative;
+            top: 3px;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+        }
+        .tabs label:hover {
+            background: rgba(255,255,255,0.5);
+            top: 0;
+        }
+
+        [id^=tab]:checked + label {
+            background: #08C;
+            color: white;
+            top: 0;
+        }
+
+        [id^=tab]:checked ~ [id^=tab-content] {
+            display: block;
+        }
+        .tab-content{
+            z-index: 2;
+            display: none;
+            text-align: left;
+            width:100%;
+            font-size: 20px;
+            line-height: 140%;
+            padding-top: 10px;
+            background: #08C;
+            padding: 15px;
+            color: white;
+            position: absolute;
+            top: 53px;
+            left: 0;
+            -webkit-animation-duration: 0.5s;
+            -o-animation-duration: 0.5s;
+            -moz-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+        }
+        /*手风琴效果*/
+        .ac-container{
+            width: 50%;
+            margin: 10px auto 30px auto;
+            text-align: left;
+        }
+        .ac-container label{
+            font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+            padding: 5px 20px;
+            position: relative;
+            z-index: 20;
+            display: block;
+            height: 30px;
+            cursor: pointer;
+            color: #777;
+            text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+            font-size: 19px;
+            background: #ffffff;
+            background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea));
+            background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+            background: -o-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+            background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+            background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
+            box-shadow:
+            0px 0px 0px 1px rgba(155,155,155,0.3),
+            1px 0px 0px 0px rgba(255,255,255,0.9) inset,
+            0px 2px 2px rgba(0,0,0,0.1);
+        }
+        .ac-container label:hover{
+            background: #fff;
+        }
+        .ac-container input:checked + label,
+        .ac-container input:checked + label:hover{
+            background: #c6e1ec;
+            color: #3d7489;
+            text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
+            box-shadow:
+            0px 0px 0px 1px rgba(155,155,155,0.3),
+            0px 2px 2px rgba(0,0,0,0.1);
+        }
+        .ac-container label:hover:after,
+        .ac-container input:checked + label:hover:after{
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            right: 13px;
+            top: 7px;
+            background: transparent url(image/arrow_down.png) no-repeat center center;
+        }
+        .ac-container input:checked + label:hover:after{
+            background-image: url(image/arrow_up.png);
+        }
+        .ac-container input{
+            display: none;
+        }
+        .ac-container article{
+            background: rgba(255, 255, 255, 0.5);
+            margin-top: -1px;
+            overflow: hidden;
+            height: 0px;
+            position: relative;
+            z-index: 10;
+            -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+            -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+            -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+            -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+            transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+        }
+        .ac-container article p{
+            font-style: italic;
+            color: #777;
+            line-height: 23px;
+            font-size: 14px;
+            padding: 20px;
+            text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+        }
+        .ac-container input:checked ~ article{
+            -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+            -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+            -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+            -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+            transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+            box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+        }
+        .ac-container input:checked ~ article.ac-small{
+            height: 140px;
+        }
+        .ac-container input:checked ~ article.ac-medium{
+            height: 180px;
+        }
+        .ac-container input:checked ~ article.ac-large{
+            height: 230px;
+        }
+        /*弹出框*/
+        .floor3 a {
+            margin:0 5px 20px;
+            background-color:#eee;
+        }
+        #dialogBg{
+            width:100%;
+            height:100%;
+            background-color:#000000;
+            opacity:.6;
+            filter:alpha(opacity=60);
+            position:fixed;
+            top:0;
+            left:0;
+            z-index:9999;
+            display:none;
+        }
+        #dialog {
+            width:300px;
+            height:240px;
+            margin:0 auto;
+            display:none;
+            background-color:#ffffff;
+            position:fixed;
+            top:50%;
+            left:50%;
+            margin:-120px 0 0 -150px;
+            z-index:10000;
+            border:1px solid #ccc;
+            border-radius:10px;
+            -webkit-border-radius:10px;
+            box-shadow:3px 2px 4px #ccc;
+            -webkit-box-shadow:3px 2px 4px #ccc;
+        }
+        .dialogTop {
+            width:90%;
+            margin:0 auto;
+            border-bottom:1px dotted #ccc;
+            letter-spacing:1px;
+            padding:10px 0;
+            text-align:right;
+        }
+
+        .editInfos {
+            padding:15px 0;
+        }
+        .editInfos li {
+            width:90%;
+            margin:8px auto auto;
+            text-align: center;
+        }
+        .ipt {
+            border:1px solid #ccc;
+            padding:5px;
+            border-radius:3px;
+            -webkit-border-radius:3px;
+            box-shadow:0 0 3px #ccc inset;
+            -webkit-box-shadow:0 0 3px #ccc inset;
+            margin-left:5px;
+        }
+        .ipt:focus {
+            outline:none;
+            border-color:#66afe9;
+            box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+            -webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+        }
+        .submitBtn {
+            width:90px;
+            height:30px;
+            line-height:30px;
+            font-family:"微软雅黑","microsoft yahei";
+            cursor:pointer;
+            margin-top:10px;
+            display:inline-block;
+            border-radius:5px;
+            -webkit-border-radius:5px;
+            text-align:center;
+            background-color:#428bca;
+            color:#fff;
+            box-shadow: 0 -3px 0 #2a6496 inset;
+            -webkit-box-shadow: 0 -3px 0 #2a6496 inset;
+        }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <nav class="nav-list">
+            <ul>
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#">产品</a></li>
+                <li><a href="#">关于我</a></li>
+                <li><a href="#">联系我</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(image/banner1.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(image/banner2.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(image/banner3.jpg)"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-white"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+    </div>
+    <div id="search">
+
+    </div>
+    <div class="floor floor1" id="tab">
+        <ul class="tabs">
+            <li>
+                <input type="radio" checked name="tabs" id="tab1">
+                <label for="tab1">tab1</label>
+                <div id="tab-content1" class="tab-content animated fadeIn">tab1的内容</div>
+            </li>
+            <li>
+                <input type="radio" name="tabs" id="tab2">
+                <label for="tab2">tab 2</label>
+                <div id="tab-content2" class="tab-content animated fadeIn">
+                   tab2的内容
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="tabs" id="tab3">
+                <label for="tab3">tab 3</label>
+                <div id="tab-content3" class="tab-content animated fadeIn">
+                    tab3的内容
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="floor floor2">
+        <section class="ac-container">
+            <div>
+                <input id="ac-1" name="accordion-1" type="checkbox" />
+                <label for="ac-1">About us</label>
+                <article class="ac-small">
+                    <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.</p>
+                </article>
+            </div>
+            <div>
+                <input id="ac-2" name="accordion-1" type="checkbox" />
+                <label for="ac-2">How we work</label>
+                <article class="ac-medium">
+                    <p>Like you, I used to think the world was this great place where everybody lived by the same standards I did, then some kid with a nail showed me I was living in his world, a world where chaos rules not order, a world where righteousness is not rewarded. That's Cesar's world, and if you're not willing to play by his rules, then you're gonna have to pay the price. </p>
+                </article>
+            </div>
+            <div>
+                <input id="ac-3" name="accordion-1" type="checkbox" />
+                <label for="ac-3">References</label>
+                <article class="ac-large">
+                    <p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man. </p>
+                </article>
+            </div>
+            <div>
+                <input id="ac-4" name="accordion-1" type="checkbox" />
+                <label for="ac-4">Contact us</label>
+                <article class="ac-large">
+                    <p>You see? It's curious. Ted did figure it out - time travel. And when we get back, we gonna tell everyone. How it's possible, how it's done, what the dangers are. But then why fifty years in the future when the spacecraft encounters a black hole does the computer call it an 'unknown entry event'? Why don't they know? If they don't know, that means we never told anyone. And if we never told anyone it means we never made it back. Hence we die down here. Just as a matter of deductive logic. </p>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <div class="floor floor3">
+        <!--触发的按钮-->
+        <a href="javascript:;" class="bounceIn">DEMO1</a>
+        <a href="javascript:;" class="rollIn">DEMO2</a>
+        <a href="javascript:;" class="bounceInDown">DEMO3</a>
+        <a href="javascript:;" class="flipInX">DEMO4</a>
+        <!--背景和弹出框-->
+        <div id="dialogBg"></div>
+        <div id="dialog" class="animated">
+            <div class="dialogTop">
+                <a href="javascript:;" class="claseDialogBtn">关闭</a>
+            </div>
+            <form action="/" method="post" id="editForm">
+                <ul class="editInfos">
+                    <li><label><font color="#ff0000">* </font>昵称：<input type="text" name="" required value="" class="ipt" /></label></li>
+                    <li><label><font color="#ff0000">* </font>手机：<input type="text" name="" required value="" class="ipt" /></label></li>
+                    <li><label><font color="#ff0000">* </font>地址：<input type="text" name="" required value="" class="ipt" /></label></li>
+                    <li><input type="submit" value="确认提交" class="submitBtn" /></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <div class="floor floor4">
+        <div class="animated rollIn" style="width:100px;height:100px;background:red;margin:0 auto;"></div>
+
+    </div>
+    <footer class="footer">
+
+    </footer>
+</div>
+
+</body>
+</html>
+
+<!--这里，我们依然遵循一个原则，能用CSS3 + JQ解决的特效，绝对不用插件-->
+
+<!--
+整体布局：floor 布局名称-floor (满屏的就直接布局名称banner,search)
+小布局:布局名称 - 功能 (或者是位置，或者是简单的数字)
+再小的布局:布局名称 - 功能 - 内容 -->
+<script>
+    var w,h,className;
+    function getSrceenWH(){
+        w = $(window).width();
+        h = $(window).height();
+        $('#dialogBg').width(w).height(h);
+    }
+    window.onresize = function(){
+        getSrceenWH();
+    }
+
+    /*引入了这个JS文件就是为了解决click事件在移动端的延迟问题，以后所有的效果*/
+    $(function() {
+        FastClick.attach(document.body);
+        //切换开始，用的是swiper的插件
+        var mySwiper = new Swiper ('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            paginationClickable: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: 2500,
+            autoplayDisableOnInteraction: false
+        });
+        //弹出框
+        getSrceenWH();
+
+        //显示弹框
+        //对比PC端的，居中CSS解决了，遮罩层的大小问题fixed解决了，真是。。。
+        $('.floor3 a').click(function(){
+            className = $(this).attr('class');
+            $('#dialogBg').fadeIn(300);
+            $('#dialog').removeAttr('class').addClass('animated '+className+'').fadeIn();
+        });
+
+        //关闭弹窗
+        $('.claseDialogBtn').click(function(){
+            $('#dialogBg').fadeOut(300,function(){
+                $('#dialog').addClass('bounceOutUp').fadeOut();
+            });
+        });
+
+
+    });
+
+</script>

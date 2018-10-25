@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--如果通过JS来计算缩放比例的话，同样可以完成页面的自适应-->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html,body {
+            margin:0;
+            padding:0;
+            border:0;
+        }
+        .floor {
+            width:640px;
+            height:200px;
+            margin:10px 0;
+            background:red;
+        }
+
+    </style>
+</head>
+<body>
+<div class="floor floor1"></div>
+<div class="floor floor2"></div>
+<div class="floor floor3"></div>
+
+</body>
+</html>
+<script>
+    //设计稿的实际宽度
+    var designWidth = parseInt(window.screen.width);
+    var ua = navigator.userAgent;
+    if (/Android (\d+\.\d+)/.test(ua)) {
+        //target-densitydpi=device-dpi为安卓设备私有属性，设置成device-dpi可以防止部分低版本安卓机器自动按照分辨率缩放
+        document.write('<meta name="viewport" content="width='+ designWidth +', target-densitydpi=device-dpi, user-scalable=no">');
+    }
+    else {
+        document.write('<meta name="viewport" content="width='+ designWidth +', user-scalable=no">');
+    }
+</script>
+<script>
+    //缩放比例调整
+    var jsVer = 29;
+    /**
+     * 一段动态的viewport meta设置，以640像素为基础宽度，动态全局缩放适配不同宽度的浏览器屏幕
+     * @isAndroid:boolean  android环境下，不需要user-scalable参数，设置了反而引发了scale的失效
+     */
+    var useScaledViewportMeta = function ( ) {
+        var phoneWidth = parseInt(window.screen.width);
+        var phoneScale = phoneWidth/640;
+        document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi,minimum-scale='+phoneScale+',maximum-scale='+phoneScale+'">');
+    };
+    var ua = navigator.userAgent;
+    if (/Android (\d+\.\d+)/.test(ua)){
+        var version = parseFloat(RegExp.$1);
+        // andriod 2.3
+        if(version>2.3){
+            useScaledViewportMeta();
+            // andriod 2.3以上
+        }else{
+            document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+        }
+        // 其他系统
+    } else {
+        useScaledViewportMeta();
+    }
+</script>

@@ -1,0 +1,514 @@
+/*自己的CSS样式*/
+html,body {
+    width:100%;/*宽度设置为100%*/
+    height:100%;/*高度设置为100%*/
+    font-family: "Microsoft YaHei";
+    font-size:16px;
+    line-height:1.5;
+}
+/*导航*/
+.navbar {
+    transition:all .5s ease-out;
+}
+.change-white {
+    background-color:#fff!important;
+}
+.change-none {
+    background-color:transparent!important;
+}
+.change-black {
+    background-color:#000!important;
+}
+.change-text-white {
+    color:#fff!important;
+}
+.change-border-white {
+    border-color:#fff!important;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar .logo-text {
+    display:inline-block;
+    font-weight:800;
+}
+.navbar .navbar-nav .nav-link {
+    color:#000;
+    font-size:14px;
+    font-weight:700;
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;
+}
+.navbar .navbar-nav .nav-link:hover {
+    color:#000;
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+}
+.navbar .navbar-nav .change-text-white:hover {
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+}
+.navbar .navbar-nav .active {
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+}
+.navbar .navbar-nav li {
+    padding:0 10px;
+}
+.navbar button {
+    outline: none;
+}
+/*关于*/
+main {
+    height:100%;
+}
+.about {
+    width:100%;
+    height:100%;
+    display:table;
+    text-align:center;
+    color:#fff;
+}
+.about-into {
+    display:table-cell;
+    vertical-align: middle;
+}
+.about-into h3 {
+    font-size:36px;
+    margin:0;
+    text-transform: uppercase;
+}
+.about-into .line {
+    display:inline-block;/*设置为块级元素*/
+    width:80px;
+    height:1px;
+    margin:20px 0;
+    background-color:#fff;
+}
+.about-into p {
+    font-size:13px;
+    font-weight:400;
+    line-height:22px;
+}
+/*欢迎*/
+.welcome {
+    padding:150px 0;
+    background:#fff;
+    text-align:center;
+}
+.welcome h3 {
+    font-size:20px;
+    font-weight:700;
+    line-height:24px;
+    text-transform: uppercase;
+    margin-top:0;
+    margin-bottom:30px;
+    color:#222;
+}
+.welcome .line {
+    width:80px;
+    height:1px;
+    margin:25px auto;
+    background-color:#000;
+}
+.welcome p {
+    font-size:13px;
+    font-weight:400;
+    line-height:22px;
+    color:#3d3d3d;
+    margin-top:20px;
+    margin-bottom:0;
+}
+.welcome a {
+    display:inline-block;
+    font-size:14px;
+    font-weight:600;
+    padding:11px 14px;
+    margin-top:45px;
+    border:2px solid #000;
+    text-transform:uppercase;
+    color:#000;
+}
+/*历程*/
+.facts {
+    padding:150px 0;
+    background:#313131 url(../img/4.jpg) no-repeat center;
+    background-size:100% auto;
+    color:#fff;
+    text-align:center;
+    position:relative;
+    z-index:1;
+}
+@media (max-width:767px) {
+    .facts {
+        background-size:200% 200%;
+    }
+}
+.facts h3 {
+    display:block;/*将某个元素变成块级元素*/
+    width:100%;
+    font-size:20px;
+    font-weight:700;
+    line-height:24px;
+    margin-top:0;
+    margin-bottom:30px;
+    text-transform: uppercase;
+    z-index:30;
+}
+.facts h4 {
+    font-size:20px;
+    font-weight:700;
+    line-height:24px;
+    text-transform: uppercase;/*大写*/
+    margin:0;
+}
+.facts em {
+    font-style:normal;
+}
+.facts .line {
+    width:65px;
+    height:1px;
+    background:#989898;
+    margin:25px auto 35px;
+}
+.facts p {
+    font-size:13px;
+    color:#f1f1f1;
+    font-weight:400;
+}
+.cover {
+    background: url(../img/overlay.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+/*团队*/
+.team {
+    background: #fff;
+    text-align: center;
+}
+.team h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    margin-top: 140px;
+    margin-bottom: 30px;
+    line-height: 24px;
+}
+.team .line {
+    width:80px;
+    height:1px;
+    margin: 0 auto;
+    background-color:#000;
+}
+.team p {
+    color: #3d3d3d;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 30px auto 40px;
+}
+.team img {
+    width: 100%;
+    height :auto;
+}
+.team h4 {
+    color: #222;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 25px;
+    margin: 36px 0 0;
+}
+.team .col-md-3 p {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 0;
+}
+.service {
+    background: url("../img/5.jpg") no-repeat center;
+    color: #fff;
+    text-align: center;
+    background-size:100% 100%;
+    position: relative;
+    z-index: 1;
+}
+.service .margin30 {
+    margin-bottom:30px;
+}
+.service h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    margin-top: 140px;
+    margin-bottom: 30px;
+    line-height: 24px;
+    z-index: 999;
+}
+.service .line {
+    width:80px;
+    height:1px;
+    margin: 0 auto;
+    background-color:#fff;
+    z-index: 999;
+}
+.service p {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 30px auto 40px;
+    z-index: 999;
+}
+.service .service-content {
+    padding:30px 0;
+    vertical-align: middle;
+}
+.service .service-content img {
+    margin: 0 auto 37px;
+    vertical-align: middle;
+    transition: all .5s;
+}
+.service .service-content img:hover {
+    transform: scale(.8);
+    cursor: pointer;
+}
+.service .service-content h4 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 25px;
+    vertical-align: middle;
+}
+.service .service-content h4 span {
+    font-weight: normal;
+}
+.product {
+    background: #fff;
+    text-align: center;
+    padding: 130px 0;
+}
+.product .col-md-12 {
+    padding: 0;
+}
+.product .col-md-3 {
+    padding:0;
+    overflow:hidden;
+}
+.product h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+    line-height: 24px;
+}
+.product .line {
+    width:80px;
+    height:1px;
+    margin: 0 auto;
+    background-color:#000;
+}
+.product ul {
+    margin: 10px auto 40px;
+    display: table;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.product ul li {
+    float: left;
+    text-align: center;
+    margin: 0 5px;
+}
+.product ul li span {
+    display: block;
+    padding: 5px 12px;
+    text-decoration: none;
+    color: #222;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    border:2px solid transparent;
+}
+.product ul li span:hover {
+    border: 2px solid #222;
+}
+.product img {
+    max-width: 100%;
+    position: relative;
+    border: none;
+    vertical-align: middle;
+    transition: all .4s;
+    z-index: 2;
+}
+.product a {
+    font-weight: 600;
+    border: 2px solid #fff;
+    padding: 10px;
+    height: 44px;
+    width: 176px;
+    display: table-cell;
+    margin: auto;
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: #fff;
+    text-decoration: none;
+    z-index: 1;
+}
+.product a:hover{
+    background: #fff;
+    color: black;
+}
+.product figure:hover img{
+    transform: scale(1.5);
+    -webkit-filter: brightness(40%);/*亮度设置*/
+    z-index: 0;
+}
+.client {
+    background: url("../img/6.jpg") no-repeat center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.client .more {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 999;
+}
+.client .more .ceo h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 50px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.client .more .ceo h3:nth-child(1) {
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+.client .more .ceo p {
+    color: #f1f1f1;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    width: 65%;
+    margin: 20px auto 70px;
+}
+.contact {
+    background: #fff;
+    text-align: center;
+}
+.contact .call {
+    margin: 0 0 0 70px;
+}
+.contact .call-top img {
+    width: 152px;
+    height: 152px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+.contact .call-top .line {
+    width:80px;
+    height:1px;
+    margin: 0 auto;
+    background-color:#000;
+}
+.contact .call-top p {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #666;
+    margin-top: 30px;
+}
+.contact .col-md-12 {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.contact .col-md-12 .col-md-4 {
+    float: left;
+}
+.contact .col-md-12 .col-md-4 h5 {
+    color: #222;
+    font-size: 20px;
+    text-align: center;
+    display: table;
+    margin: 80px auto 50px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.contact .col-md-12 .col-md-4 p {
+    color: #3d3d3d;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 30px auto 0;
+}
+.contact .col-md-12 .col-md-4 label {
+    color: #3d3d3d;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    width: 85%;
+    margin: auto;
+}
+.contact .col-md-12 .col-md-4 .tijiao {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #ccc;
+    width: 100px;
+    margin-top: 5px;
+}
+.footer {
+    display: block;
+    background-color: #000;
+    text-align: center;
+}
+.footer p{
+    font-size: 13px;
+    text-align: center;
+    margin: 0;
+    color: #f1f1f1;
+}
+.footer p:nth-of-type(1){
+    padding-top: 60px;
+}
+.footer img {
+    height: 50px;
+    width: auto;
+    margin: 10px auto 40px;
+}
+
+
+
+
+
+
+
+
+
+

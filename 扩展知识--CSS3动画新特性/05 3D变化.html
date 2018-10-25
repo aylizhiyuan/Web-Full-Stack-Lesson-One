@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>3d变化</title>
+    <style>
+        * {
+            box-sizing:border-box;
+        }
+        html,body {
+            margin:0;
+            padding:0;
+            border:0;
+            font-size:14px;
+            background:black;
+        }
+        div {
+            width:600px;
+            height:600px;
+            margin:50px auto;
+            position:relative;
+            background:#aaa;
+            /*下面我们就开始设置父元素的3D变化*/
+            transform-style:preserve-3d;
+            /*随后设置观察者的位置*/
+            /*Z轴的范围吧，如果是100，那么它的范围就是0-100*/
+            perspective:400px;
+            /*最后设置观察者的角度*/
+            perspective-origin:left bottom;
+            opacity:0.5;
+        }
+        section {
+            width:300px;
+            height:300px;
+            border:1px solid red;
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin-left:-150px;
+            margin-top:-150px;
+            background-image:url(mao.png);
+            background-size:contain;
+            opacity:1;
+        }
+        #a section {
+            /*平移2D效果是translate(X轴,Y轴)*/
+            /*translate3d(X轴,Y轴,Z轴)  第一种*/
+            /*translateZ(Z轴),单独设置Z轴*/
+            /*translate3d(0,0,Z轴);*/
+            /*Z轴数值越大，离物体越近，Z轴的数值越小呢，离物体越远*/
+            transform:translateZ(10px);
+        }
+        #b section {
+            /*scaleX()单独设置X轴的缩放*/
+            /*scaleY()单独设置Y轴的缩放*/
+            /*scaleZ()单独设置Z轴的缩放*/
+            /*在进行缩放的时候，必须加旋转角度*/
+            /*X轴是左右伸缩，Y轴是上下伸缩，Z轴是前后伸缩*/
+            transform:scale3d(0.5,0.5,1.5) rotateX(20deg);
+        }
+        #c section {
+            /*表示简写方式，第一个值是X轴的数值,第二个值是Y轴的数值,第三个 */
+            /*是Z轴的数值，最后才是旋转的角度*/
+            transform:rotate3d(1,5,0,45deg);
+            /*单独的X轴旋转*/
+            /*X轴旋转，上下翻转*/
+            /*transform:rotateX(120deg);*/
+            /*Y轴旋转，左右翻转*/
+            /*transform:rotateY(50deg);*/
+            /*Z轴旋转，前后(平面)翻转*/
+            /*transform:rotateZ(60deg);*/
+        }
+    </style>
+</head>
+<body>
+<div id="a">
+    <section></section>
+</div>
+<div id="b">
+    <section></section>
+</div>
+<div id="c">
+    <section></section>
+</div>
+
+</body>
+</html>

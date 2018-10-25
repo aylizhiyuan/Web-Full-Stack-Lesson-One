@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="description" content="京东描述">
+    <meta name="keywords" content="京东关键词">
+    <!-- 以上是两个重要的描述，也是唯一的两个-->
+	<!-- author:李志远-qq:148334733 -->
+    <title>仿京东页面</title>
+    <link rel="stylesheet"  type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <div id="all">
+        <div class="top">
+            <div class="top-in">
+                <!--尽量减少DIV的层级，这里，自己就犯了频繁使用DIV的错误试图将这三个列表写到一个DIV中 -->
+                <!--zoom:1;一般是拿来解决IE6的子元素浮动时候父元素不随着自动扩大的问题，功能相当于overflow:auto，同样也可以用height:1%来代替zoom:1。所以一般要在浮动元素的父元素加上overflow:auto；zoom:1;。这样，子元素浮动，父元素再也不会不自动跟子元素扩大了。visible是如果里头的内容溢出将会显示-->
+                <ul class="fl" style="zoom: 1;overflow: visible;">
+                    <!--直接设置了LI的样式，忽略了UL的样式 因为每个LI都是不一样的！-->
+                    <li class="fl shoucang"><b></b><a href="#">收藏京东</a></li>
+                    <li class="fl guanzhu">
+                        <a href="#"><i class="erweima"></i>关注京东</a>
+                        <div class="ewm-show" style="display:none;">
+                            <span class="arrow">
+                                <i class="layer1"></i>
+                                <i class="layer2"></i>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <dl id="homearea">
+                    <dt>
+                        <b></b>
+                        <strong>北京</strong>
+                        <a href="#">[更换]</a>
+                        <span class="blank"></span>
+                    </dt>
+                    <dd class="dd"></dd>
+
+                </dl>
+                <ul class="fr denglu" style="zoom:1;height:30px;overflow: visible;">
+                    <li class="fl">您好，欢迎来到京东！<span><a href="#">[登录] </a><a href="#">[免费注册]</a></span></li>
+                    <li class="fl"><a href="#">我的订单</a></li>
+                    <li class="fl"><a href="#">会员俱乐部</a></li>
+                    <li class="fl"><a href="#">企业频道</a></li>
+                    <li class="fl"><a href="#">手机京东</a></li>
+                    <li class="fl"><a href="#">客户服务</a></li>
+                    <li class="fl"><a href="#">网站导航</a></li>
+                </ul>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="search">
+                <div class="logo fl">
+                    <a href="#"><img src="http://misc.360buyimg.com/lib/img/e/logo-201305.png" width="270" height="60" alt="京东"></a>
+                </div>
+                <div class="search-box fl">
+                    <div class="search-box-1">
+                        <div class="form">
+                            <input type="text" class="text"/>
+                            <input type="button" class="button" value="搜索"/>
+                        </div>
+                    </div>
+                    <div class="hotwords">
+                        <strong>热门搜索:</strong>
+                        <a href="#">10元返现</a>
+                        <a href="#">惠普E神</a>
+                        <a href="#">飞利浦</a>
+                        <a href="#">郎酒年货</a>
+                        <a href="#">礼品采购</a>
+                        <a href="#">媚蓝note</a>
+                        <a href="#">火车头</a>
+                        <a href="#">超省钱</a>
+                    </div>
+                </div>
+                <div class="myjd fl">
+                    <dl>
+                        <dt><a href="#">我的京东</a></dt>
+                        <dd></dd>
+                    </dl>
+                </div>
+                <div class="che fl">
+                    <dl>
+                        <dt><a href="#">去购物车结算</a></dt>
+                        <dd></dd>
+                    </dl>
+                </div>
+                <div class="jb fr"><a href="#"><img src="http://img11.360buyimg.com/da/jfs/t154/253/1471854336/2409/118e7abc/53ace1f7Na53fac3d.png" alt="暴恐音视频举报专区"/></a></div>
+            </div>
+            <div class="nav"></div>
+        </div>
+        <div class="nav">
+            <div class="nav-in">
+                <!-- 这里的全部分类以绝对定位的形式定位到导航栏中-->
+                <div class="allnav">
+                    <div class="mt"><h2><a href="#">全部商品分类</a></h2></div>
+                    <div class="mc">
+                        <div class="part1">
+                            <span><h3>
+                                <a href="#">图书</a>、<a href="#">音像</a>、<a href="#">数字产品</a>
+                            </h3></span>
+                            <div class="i-mc"></div> <!--导航展出的时候的下拉 -->
+                        </div>
+                        <div class="part2">
+                             <span><h3>
+                                 <a href="#">家用电器</a>
+                             </h3></span>
+                            <div class="i-mc"></div> <!--导航展出的时候的下拉 -->
+                        </div>
+                        <div class="part2">
+                             <span><h3>
+                                 <a href="#">手机</a>、<a href="#">数码</a>、<a href="#">手机通信</a>
+                             </h3></span>
+                            <div class="i-mc"></div> <!--导航展出的时候的下拉 -->
+                        </div>
+                        <div class="part2">
+                             <span><h3>
+                                 <a href="#">电脑</a>、<a href="#">办公</a>
+                             </h3></span>
+                            <div class="i-mc"></div> <!--导航展出的时候的下拉 -->
+                        </div>
+                        <div class="part2">
+                             <span><h3>
+                                 <a href="#">家居</a>、<a href="#">家具</a>、<a href="#">家装</a>、<a href="#">厨具</a>
+                             </h3></span>
+                            <div class="i-mc"></div> <!--导航展出的时候的下拉 -->
+                        </div>
+                        <div class="part2">
+                             <span><h3>
+                                 <a href="#">男装</a>、<a href="#">女装</a>、<a href="#">内衣</a>、<a href="#">珠宝</a>
+                             </h3></span>
+                            <div class="i-mc"></div> <!--导航展出的时候的下拉 -->
+                        </div>
+                        <div class="part2">
+                             <span><h3>
+                                 <a href="#">个护化妆</a>
+                             </h3></span>
+                            <div class="i-mc"></div> <!--导航展出的时候的下拉 -->
+                        </div>
+                        <div class="part2">
+                             <span><h3>
+                                 <a href="#">鞋靴</a>、<a href="#">箱包</a>、<a href="#">钟表</a>
+                             </h3></span>
+                            <div class="i-mc"></div> <!--导航展出的时候的下拉 -->
+                        </div>
+                        <div class="part2">
+                             <span><h3>
+                                 <a href="#">运动户外</a>
+                             </h3></span>
+                            <div class="i-mc"></div> <!--导航展出的时候的下拉 -->
+                        </div>
+                        <div class="part2">
+                             <span><h3>
+                                 <a href="#">整车</a>、<a href="#">汽车用品</a>
+                             </h3></span>
+                            <div class="i-mc"></div> <!--导航展出的时候的下拉 -->
+                        </div>
+                        <div class="part2">
+                             <span><h3>
+                                 <a href="#">母婴</a>、<a href="#">数码</a>、<a href="#">玩具乐器</a>
+                             </h3></span>
+                            <div class="i-mc"></div> <!--导航展出的时候的下拉 -->
+                        </div>
+                        <div class="part2">
+                             <span><h3>
+                                 <a href="#">食品饮料</a>、<a href="#">酒类</a>、<a href="#">生鲜</a>
+                             </h3></span>
+                            <div class="i-mc"></div> <!--导航展出的时候的下拉 -->
+                        </div>
+                        <div class="part2">
+                             <span><h3>
+                                 <a href="#">营养保健</a>
+                             </h3></span>
+                            <div class="i-mc"></div> <!--导航展出的时候的下拉 -->
+                        </div>
+                        <div class="part2">
+                             <span><h3>
+                                 <a href="#">彩票</a>、<a href="#">旅游</a>、<a href="#">充值</a>、<a href="#">票务</a>
+                             </h3></span>
+                            <div class="i-mc"></div> <!--导航展出的时候的下拉 -->
+                        </div>
+                    </div>
+                </div>
+                <ul class="mainnav">
+                    <li class="fl" style="background: #A40000;"><a href="#">首页</a></li>
+                    <li class="fl"><a href="#">服装城</a></li>
+                    <li class="fl"><a href="#">食品</a></li>
+                    <li class="fl"><a href="#">团购</a></li>
+                    <li class="fl"><a href="#">夺宝岛</a></li>
+                    <li class="fl"><a href="#">闪购</a></li>
+                    <li class="fl"><a href="#">金融</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="jd1">
+            <div class="jd1-banner">
+                <div class="slide"><img src="http://img30.360buyimg.com/ads/jfs/t694/307/1319585370/59394/abb43927/54cf5979N648cacc4.jpg"></div>
+                <div class="jscroll">
+                    <div class="ctr1"><b></b></div>
+                    <div class="ctr2"><b></b></div>
+                    <div class="o-list">
+                        <div class="list">
+                            <ul>
+                                <li><img src="http://misc.360buyimg.com/lib/img/e/blank.gif" width="202" height="159"></li>
+                                <li><img src="http://misc.360buyimg.com/lib/img/e/blank.gif" width="202" height="159"></li>
+                                <li><img src="http://misc.360buyimg.com/lib/img/e/blank.gif" width="202" height="159"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="jd1-1">
+                <a href="#"><img src="http://img30.360buyimg.com/ads/jfs/t754/189/699546185/14756/c6ad86f5/54d338d0Nebadf467.jpg" width="310" height="70" alt=""></a>
+            </div>
+            <div class="jd1-2">
+                <div class="mt"><h2 class="fl">京东快报</h2><span class="fr"><a href="#" style="color:#005EA7;">更多快报>&nbsp;</a></span></div>
+                <div class="mc">
+                    <ul>
+                        <li><a href="#">松鼠好年货2折开抢！</a></li>
+                        <li><a href="#">关于假冒客服诈骗的声明</a></li>
+                        <li><a href="#">家电狂降五折起！</a></li>
+                        <li><a href="#">用新版APP拿千万京券</a></li>
+                        <li><a href="#">团购情人节甜蜜聚惠</a></li>
+                        <li><a href="#">《太极熊猫》礼包1元秒</a></li>
+                        <li><a href="#">家居年货大采购 低至9.9</a></li>
+                        <li><a href="#">浪漫情人节 与ta共享</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="jd1-3">
+                <div class="mt">
+                    <ul class="fore1">
+                        <li><a href="#"><s></s>话费<i></i></a></li>
+                        <li><a href="#"><s></s>机票<i></i></a></li>
+                        <li><a href="#"><s></s>彩票<i></i></a></li>
+                        <li><a href="#"><s></s>游戏<i></i></a></li>
+                    </ul>
+                    <ul class="fore2">
+                        <li><a href="#"><s></s>旅行</a></li>
+                        <li><a href="#"><s></s>电影票</a></li>
+                        <li><a href="#"><s></s>理财</a></li>
+                        <li><a href="#"><s></s>水电煤</a></li>
+                    </ul>
+                </div>
+                <div class="mc"></div> <!--这里是鼠标事件显示的布局 -->
+            </div>
+            <div class="clr"></div>
+        </div>
+        <div class="showcase">
+            <div class="m">
+                <div class="mt"><img height="24" src="http://img10.360buyimg.com/da/g14/M01/05/0C/rBEhVVKhYwkIAAAAAAAF6HrqOJ4AAGixwP_7eUAAAYA841.png"></div>
+                <div class="mc">
+                    <div class="sc-list clearfix" style="zoom:1;overflow: auto;">
+                        <div class="item">
+                            <div class="aside">
+                                <a href="#" class="s-link"></a>
+                                <h3>品牌街</h3>
+                                <div class="s-name"><a href="#">会飞的照相机</a></div>
+                                <div class="s-ext"><b>遥控航拍飞行器</b></div>
+                                <ul class="s-hotword">
+                                    <li><i></i>更多品牌</li>
+                                    <li><i></i>进入品牌街</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="s-img"><img width="305px" height="190px" src="http://img10.360buyimg.com/vclist/jfs/t544/49/1386218369/41049/f1ae3958/54d36387N73bb70d5.jpg"></a>
+                        </div>
+                        <div class="item">
+                            <div class="aside">
+                                <a href="#" class="s-link"></a>
+                                <h3>品牌街</h3>
+                                <div class="s-name"><a href="#">会飞的照相机</a></div>
+                                <div class="s-ext"><b>遥控航拍飞行器</b></div>
+                                <ul class="s-hotword">
+                                    <li><i></i>更多品牌</li>
+                                    <li><i></i>进入品牌街</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="s-img"><img width="305px" height="190px" src="http://img10.360buyimg.com/vclist/jfs/t544/49/1386218369/41049/f1ae3958/54d36387N73bb70d5.jpg"></a>
+                        </div>
+                        <div class="item">
+                            <div class="aside">
+                                <a href="#" class="s-link"></a>
+                                <h3>品牌街</h3>
+                                <div class="s-name"><a href="#">会飞的照相机</a></div>
+                                <div class="s-ext"><b>遥控航拍飞行器</b></div>
+                                <ul class="s-hotword">
+                                    <li><i></i>更多品牌</li>
+                                    <li><i></i>进入品牌街</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="s-img"><img width="305px" height="190px" src="http://img10.360buyimg.com/vclist/jfs/t544/49/1386218369/41049/f1ae3958/54d36387N73bb70d5.jpg"></a>
+                        </div>
+                        <div class="item">
+                            <div class="aside">
+                                <a href="#" class="s-link"></a>
+                                <h3>品牌街</h3>
+                                <div class="s-name"><a href="#">会飞的照相机</a></div>
+                                <div class="s-ext"><b>遥控航拍飞行器</b></div>
+                                <ul class="s-hotword">
+                                    <li><i></i>更多品牌</li>
+                                    <li><i></i>进入品牌街</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="s-img"><img width="305px" height="190px" src="http://img10.360buyimg.com/vclist/jfs/t544/49/1386218369/41049/f1ae3958/54d36387N73bb70d5.jpg"></a>
+                        </div>
+                        <div class="item">
+                            <div class="aside">
+                                <a href="#" class="s-link"></a>
+                                <h3>品牌街</h3>
+                                <div class="s-name"><a href="#">会飞的照相机</a></div>
+                                <div class="s-ext"><b>遥控航拍飞行器</b></div>
+                                <ul class="s-hotword">
+                                    <li><i></i>更多品牌</li>
+                                    <li><i></i>进入品牌街</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="s-img"><img width="305px" height="190px" src="http://img10.360buyimg.com/vclist/jfs/t544/49/1386218369/41049/f1ae3958/54d36387N73bb70d5.jpg"></a>
+                        </div>
+                        <div class="item">
+                            <div class="aside">
+                                <a href="#" class="s-link"></a>
+                                <h3>品牌街</h3>
+                                <div class="s-name"><a href="#">会飞的照相机</a></div>
+                                <div class="s-ext"><b>遥控航拍飞行器</b></div>
+                                <ul class="s-hotword">
+                                    <li><i></i>更多品牌</li>
+                                    <li><i></i>进入品牌街</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="s-img"><img width="305px" height="190px" src="http://img10.360buyimg.com/vclist/jfs/t544/49/1386218369/41049/f1ae3958/54d36387N73bb70d5.jpg"></a>
+                        </div>
+                        <div class="item">
+                            <div class="aside">
+                                <a href="#" class="s-link"></a>
+                                <h3>品牌街</h3>
+                                <div class="s-name"><a href="#">会飞的照相机</a></div>
+                                <div class="s-ext"><b>遥控航拍飞行器</b></div>
+                                <ul class="s-hotword">
+                                    <li><i></i>更多品牌</li>
+                                    <li><i></i>进入品牌街</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="s-img"><img width="305px" height="190px" src="http://img10.360buyimg.com/vclist/jfs/t544/49/1386218369/41049/f1ae3958/54d36387N73bb70d5.jpg"></a>
+                        </div>
+                        <div class="item">
+                            <div class="aside">
+                                <a href="#" class="s-link"></a>
+                                <h3>品牌街</h3>
+                                <div class="s-name"><a href="#">会飞的照相机</a></div>
+                                <div class="s-ext"><b>遥控航拍飞行器</b></div>
+                                <ul class="s-hotword">
+                                    <li><i></i>更多品牌</li>
+                                    <li><i></i>进入品牌街</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="s-img"><img width="305px" height="190px" src="http://img10.360buyimg.com/vclist/jfs/t544/49/1386218369/41049/f1ae3958/54d36387N73bb70d5.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="sc-ext clearfix" style="zoom:1;overflow:auto;">
+                        <div class="item"><a href="#"><img width="396" height="70" src="http://img30.360buyimg.com/ads/jfs/t466/323/1371343061/6676/b08d0ad8/54d36961N81b4e80e.jpg"></a></div>
+                        <div class="item"><a href="#"><img width="396" height="70" src="http://img30.360buyimg.com/ads/jfs/t712/155/719592498/6460/a84201b7/54d3641cN4614c23c.jpg"></a></div>
+                        <div class="item"><a href="#"><img width="396" height="70" src="http://img30.360buyimg.com/ads/jfs/t706/352/717156380/11167/247797fb/54d36307Nd0ab082c.png"></a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="floor">
+            <div class="floor-nav">
+                <div class="mt">
+                    <div class="num"><b class="b1"></b><b class="b2"></b><b class="b3">1F</b> <b class="b4"></b></div>
+                    <h2>家电通讯</h2>
+                </div>
+                <div class="mc">
+                    <ul>
+                        <li><a href="#">手机</a></li>
+                        <li><a href="#">空调</a></li>
+                        <li><a href="#">手机配件</a></li>
+                        <li><a href="#">平板电视</a></li>
+                        <li><a href="#">话费补贴</a></li>
+                        <li><a href="#">冰箱</a></li>
+                        <li><a href="#">生活电器</a></li>
+                        <li><a href="#">洗衣机</a></li>
+                        <li><a href="#">厨房电器</a></li>
+                        <li><a href="#">热水器</a></li>
+                        <li><a href="#">个护健康</a></li>
+                        <li><a href="#">烟机炉灶</a></li>
+                        <li><a href="#">五金家装</a></li>
+                        <li><a href="#">家庭影院</a></li>
+                        <li><a href="#">冰柜/冰箱</a></li>
+                        <li><a href="#">汽车用品</a></li>
+                    </ul>
+                    <span><a href="#"><img width="209" height="155" src="http://img30.360buyimg.com/ads/jfs/t454/257/1346146970/4015/c41e1c8b/54d1d7a4N0ae971f2.jpg"></a></span>
+                </div>
+            </div>
+            <div class="floor-list">
+                <div class="sm1">
+                    <div class="smt"><h3>特价商品</h3></div>
+                    <div class="smc">
+                        <div class="slide">
+                            <a href="#"><img src="http://img30.360buyimg.com/da/jfs/t763/26/738078471/14939/36eb6ce8/54d57f44N5608b594.jpg" width="473" height="180" alt="" data-img="2"></a>
+                        </div>
+                        <ul class="tist">
+                            <li class="style1">
+                                <div class="i-img">
+                                    <a href="#" target="_blank" title="48英寸智能电视2499,55英寸智能电视3499"><img width="100" height="100" alt="48英寸智能电视2499,55英寸智能电视3499" data-img="1" src="http://img10.360buyimg.com/vclist/jfs/t679/86/1333611145/9595/d50dcf57/54cb682eNbae1d5a9.jpg"></a>
+                                </div>
+                                <div class="i-name">
+                                    <a href="#" target="_blank" title="48英寸智能电视2499,55英寸智能电视3499">48英寸智能电视2499,55英寸智能电视3499</a>
+                                </div>
+                                <div class="i-price">
+                                    <span style="font-size: 12px;display:block;height:1.5em;overflow:hidden;">买电视送澳门风云2电影票</span>
+                                </div>
+                            </li>
+                            <li class="style2">
+                                <div class="i-img">
+                                    <a href="#" target="_blank" title="48英寸智能电视2499,55英寸智能电视3499"><img width="100" height="100" alt="48英寸智能电视2499,55英寸智能电视3499" data-img="1" src="http://img10.360buyimg.com/vclist/jfs/t679/86/1333611145/9595/d50dcf57/54cb682eNbae1d5a9.jpg"></a>
+                                </div>
+                                <div class="i-name">
+                                    <a href="#" target="_blank" title="48英寸智能电视2499,55英寸智能电视3499">48英寸智能电视2499,55英寸智能电视3499</a>
+                                </div>
+                                <div class="i-price">
+                                    <span style="font-size: 12px;display:block;height:1.5em;overflow:hidden;">买电视送澳门风云2电影票</span>
+                                </div>
+                            </li>
+                            <li class="style3">
+                                <div class="i-img">
+                                    <a href="#" target="_blank" title="48英寸智能电视2499,55英寸智能电视3499"><img width="100" height="100" alt="48英寸智能电视2499,55英寸智能电视3499" data-img="1" src="http://img10.360buyimg.com/vclist/jfs/t679/86/1333611145/9595/d50dcf57/54cb682eNbae1d5a9.jpg"></a>
+                                </div>
+                                <div class="i-name">
+                                    <a href="#" target="_blank" title="48英寸智能电视2499,55英寸智能电视3499">48英寸智能电视2499,55英寸智能电视3499</a>
+                                </div>
+                                <div class="i-price">
+                                    <span style="font-size: 12px;display:block;height:1.5em;overflow:hidden;">买电视送澳门风云2电影票</span>
+                                </div>
+                            </li>
+                            <li class="style4">
+                                <div class="i-img">
+                                    <a href="#" target="_blank" title="48英寸智能电视2499,55英寸智能电视3499"><img width="100" height="100" alt="48英寸智能电视2499,55英寸智能电视3499" data-img="1" src="http://img10.360buyimg.com/vclist/jfs/t679/86/1333611145/9595/d50dcf57/54cb682eNbae1d5a9.jpg"></a>
+                                </div>
+                                <div class="i-name">
+                                    <a href="#" target="_blank" title="48英寸智能电视2499,55英寸智能电视3499">48英寸智能电视2499,55英寸智能电视3499</a>
+                                </div>
+                                <div class="i-price">
+                                    <span style="font-size: 12px;display:block;height:1.5em;overflow:hidden;">买电视送澳门风云2电影票</span>
+                                </div>
+                            </li>
+                            <li class="style5">
+                                <div class="i-img">
+                                    <a href="#" target="_blank" title="48英寸智能电视2499,55英寸智能电视3499"><img width="100" height="100" alt="48英寸智能电视2499,55英寸智能电视3499" data-img="1" src="http://img10.360buyimg.com/vclist/jfs/t679/86/1333611145/9595/d50dcf57/54cb682eNbae1d5a9.jpg"></a>
+                                </div>
+                                <div class="i-name">
+                                    <a href="#" target="_blank" title="48英寸智能电视2499,55英寸智能电视3499">48英寸智能电视2499,55英寸智能电视3499</a>
+                                </div>
+                                <div class="i-price">
+                                    <span style="font-size: 12px;display:block;height:1.5em;overflow:hidden;">买电视送澳门风云2电影票</span>
+                                </div>
+                            </li>
+                            <li class="style6">
+                                <div class="i-img">
+                                    <a href="#" target="_blank" title="48英寸智能电视2499,55英寸智能电视3499"><img width="100" height="100" alt="48英寸智能电视2499,55英寸智能电视3499" data-img="1" src="http://img10.360buyimg.com/vclist/jfs/t679/86/1333611145/9595/d50dcf57/54cb682eNbae1d5a9.jpg"></a>
+                                </div>
+                                <div class="i-name">
+                                    <a href="#" target="_blank" title="48英寸智能电视2499,55英寸智能电视3499">48英寸智能电视2499,55英寸智能电视3499</a>
+                                </div>
+                                <div class="i-price">
+                                    <span style="font-size: 12px;display:block;height:1.5em;overflow:hidden;">买电视送澳门风云2电影票</span>
+                                </div>
+                            </li>
+                            <li class="style7">
+                                <div class="i-img">
+                                    <a href="#" target="_blank" title="48英寸智能电视2499,55英寸智能电视3499"><img width="100" height="100" alt="48英寸智能电视2499,55英寸智能电视3499" data-img="1" src="http://img10.360buyimg.com/vclist/jfs/t679/86/1333611145/9595/d50dcf57/54cb682eNbae1d5a9.jpg"></a>
+                                </div>
+                                <div class="i-name">
+                                    <a href="#" target="_blank" title="48英寸智能电视2499,55英寸智能电视3499">48英寸智能电视2499,55英寸智能电视3499</a>
+                                </div>
+                                <div class="i-price">
+                                    <span style="font-size: 12px;display:block;height:1.5em;overflow:hidden;">买电视送澳门风云2电影票</span>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="sm1">
+                    <div class="smt" style="left:158px;"><h3>大家电</h3></div>
+                </div>
+                <div class="sm1">
+                    <div class="smt" style="left:316px;"><h3>小家电</h3></div>
+                </div>
+                <div class="sm1">
+                    <div class="smt" style="left:474px;"><h3>手机通讯</h3></div>
+                </div>
+                <div class="sm1">
+                    <div class="smt" style="left:632px;"><h3>汽车五金</h3></div>
+                </div>
+            </div>
+            <div class="floor-brand">
+                <div class="smt">
+                    <div class="fr">
+                        <a href="#">大家电配送></a>
+                        <a href="#">合约计划说明></a>
+                    </div>
+                </div>
+                <div class="smc">
+                    <ul>
+                        <li><a href="#"><img height="35" width="98" alt="" data-img="2" src="http://img10.360buyimg.com/da/g10/M00/0E/0D/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" class="err-product"></a></li>
+                        <li><a href="#"><img height="35" width="98" alt="" data-img="2" src="http://img10.360buyimg.com/da/g10/M00/0E/0D/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" class="err-product"></a></li>
+                        <li><a href="#"><img height="35" width="98" alt="" data-img="2" src="http://img10.360buyimg.com/da/g10/M00/0E/0D/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" class="err-product"></a></li>
+                        <li><a href="#"><img height="35" width="98" alt="" data-img="2" src="http://img10.360buyimg.com/da/g10/M00/0E/0D/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" class="err-product"></a></li>
+                        <li><a href="#"><img height="35" width="98" alt="" data-img="2" src="http://img10.360buyimg.com/da/g10/M00/0E/0D/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" class="err-product"></a></li>
+                        <li><a href="#"><img height="35" width="98" alt="" data-img="2" src="http://img10.360buyimg.com/da/g10/M00/0E/0D/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" class="err-product"></a></li>
+                        <li><a href="#"><img height="35" width="98" alt="" data-img="2" src="http://img10.360buyimg.com/da/g10/M00/0E/0D/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" class="err-product"></a></li>
+                        <li><a href="#"><img height="35" width="98" alt="" data-img="2" src="http://img10.360buyimg.com/da/g10/M00/0E/0D/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" class="err-product"></a></li>
+                        <li><a href="#"><img height="35" width="98" alt="" data-img="2" src="http://img10.360buyimg.com/da/g10/M00/0E/0D/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" class="err-product"></a></li>
+                        <li><a href="#"><img height="35" width="98" alt="" data-img="2" src="http://img10.360buyimg.com/da/g10/M00/0E/0D/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" class="err-product"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="floor-gg">
+                <a href="#"><img src="http://img30.360buyimg.com/ads/jfs/t739/184/709811396/10534/2dab7ed8/54d4112bN7e9d9dbc.jpg" width="209" height="180" alt="" data-img="2"></a>
+            </div>
+            <span class="clr"></span>
+        </div>
+        <div class="shai">
+            <div class="shai-1">
+                <div class="mt">
+                    <h2 class="fl">热门晒单</h2>
+                    <div class="fr"></div> <!-- 这里为什么要float:right很困惑啊？  -->
+                </div>
+                <div class="mc">
+                    <ul>
+                        <li style="height:60px;display:list-item">
+                            <div class="p-img">
+                                <a href="#"><img width="50" height="50" src="http://img10.360buyimg.com/N4/jfs/t175/69/1841832942/98936/91e1a750/53bb8d52N65fa727b.jpg"/></a>
+                                <b class="ci"></b>
+                            </div>
+                            <div class="p-name"><a href="#">晒单的产品</a></div>
+                            <div class="p-detail"><a href="#">京东送货速度很快，电源品质很好，沉甸甸的。不运行游戏什么的风扇基本不转。节能静音。确实不错。电源黑色磨砂漆。做工很好，接口丰富。一般的电脑够用。电源定位中端，同价位基本无敌。理线简单，总体不错。以后硬件也都是节能。相当长时间都不用更换电源了。比较超值</a></div>
+                        </li>
+                        <li style="height:60px;display:list-item">
+                            <div class="p-img">
+                                <a href="#"><img width="50" height="50" src="http://img10.360buyimg.com/N4/jfs/t175/69/1841832942/98936/91e1a750/53bb8d52N65fa727b.jpg"/></a>
+                                <b class="ci"></b>
+                            </div>
+                            <div class="p-name"><a href="#">晒单的产品</a></div>
+                            <div class="p-detail"><a href="#">京东送货速度很快，电源品质很好，沉甸甸的。不运行游戏什么的风扇基本不转。节能静音。确实不错。电源黑色磨砂漆。做工很好，接口丰富。一般的电脑够用。电源定位中端，同价位基本无敌。理线简单，总体不错。以后硬件也都是节能。相当长时间都不用更换电源了。比较超值</a></div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="shai-2">
+                <div class="mt">
+                    <h2>热门活动</h2>
+                    <div class="fr"></div>
+                </div>
+                <div class="mc">
+                    <ul>
+                        <li>
+                            <div class="p-img">
+                                <a href="#"><img width="50" height="50" src="http://img10.360buyimg.com/vclist/jfs/t700/15/197034829/101477/5c74e844/54922fc5Ned4aa953.jpg"/></a>
+                                <b class="ci"></b>
+                            </div>
+                            <div class="p-name"><a href="#">舒肤佳专效护理系列沐浴露敏感型晒单免单</a></div>
+                            <div class="p-detail"><a href="#">睦清儿童按摩乳0元试用！改善呼吸，迅速化痰，增强儿童自身免疫力~</a></div>
+                        </li>
+                        <li>
+                            <div class="p-img">
+                                <a href="#"><img width="50" height="50" src="http://img10.360buyimg.com/vclist/jfs/t700/15/197034829/101477/5c74e844/54922fc5Ned4aa953.jpg"/></a>
+                                <b class="ci"></b>
+                            </div>
+                            <div class="p-name"><a href="#">舒肤佳专效护理系列沐浴露敏感型晒单免单</a></div>
+                            <div class="p-detail"><a href="#">睦清儿童按摩乳0元试用！改善呼吸，迅速化痰，增强儿童自身免疫力~</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shai-3">
+                <div class="mt">
+                    <h2 class="fl">在线读书</h2>
+                    <div class="fr"><a href="#">更多在线读书</a></div>
+                </div>
+                <div class="mc">
+                    <div class="p-img"><a href="#"><img width="100" height="100" src="http://img10.360buyimg.com/vclist/jfs/t631/357/754283473/8110/9c2ed326/54854ad8N6680afb3.jpg"/></a></div>
+                    <ul class="fr">
+                        <li><a href="#"><b>·</b>电子书圣诞狂欢，免费赢手机</a></li>
+                        <li><a href="#"><b>·</b>电子书圣诞狂欢，免费赢手机</a></li>
+                        <li><a href="#"><b>·</b>电子书圣诞狂欢，免费赢手机</a></li>
+                        <li><a href="#"><b>·</b>电子书圣诞狂欢，免费赢手机</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shai-4">
+                <div class="mt"><h2>订阅促销信息</h2></div>
+                <dic class="mc">
+                    <input type="text" style="color: rgb(153, 153, 153);width: 215px;height: 21px;padding: 1px 0 1px 25px;background: url(http://misc.360buyimg.com/product/skin/2013/i/20130330B_1.png) no-repeat -251px -46px;border: 1px inset #bbb;line-height: 21px;float: left;" value="请输入您的EMAIL地址"/>
+                    <input  class="button" type="button" value="订阅"/>
+                </dic>
+            </div>
+            <span class="clr"></span>
+        </div>
+        <div class="footer-1">
+            <div class="footer-1-in">
+                <dl class=" fl fore1">
+                    <dt>
+                        <b></b>
+                        <strong>购物指南</strong>
+                    </dt>
+                    <dd>
+                        <div><a href="#">购物流程</a></div>
+                        <div><a href="#">会员介绍</a></div>
+                        <div><a href="#">团购机票</a></div>
+                        <div><a href="#">常见问题</a></div>
+                        <div><a href="#">大家电</a></div>
+                        <div><a href="#">联系客服</a></div>
+                    </dd>
+                </dl>
+                <dl class="fl fore2">
+                    <dt>
+                        <b></b>
+                        <strong>配送方式</strong>
+                    </dt>
+                    <dd>
+                        <div><a href="#">上门自提</a></div>
+                        <div><a href="#">211限时达</a></div>
+                        <div><a href="#">配送服务查询</a></div>
+                        <div><a href="#">配送费收取标准</a></div>
+                        <div><a href="#">海外配送</a></div>
+                    </dd>
+                </dl>
+                <dl class="fl fore3">
+                    <dt>
+                        <b></b>
+                        <strong>支付方式</strong>
+                    </dt>
+                    <dd>
+                        <div><a href="#">货到付款</a></div>
+                        <div><a href="#">在线支付</a></div>
+                        <div><a href="#">分期付款</a></div>
+                        <div><a href="#">邮局付款</a></div>
+                        <div><a href="#">公司转账</a></div>
+                    </dd>
+                </dl>
+                <dl class="fl fore4">
+                    <dt>
+                        <b></b>
+                        <strong>售后服务</strong>
+                    </dt>
+                    <dd>
+                        <div><a href="#">售后政策</a></div>
+                        <div><a href="#">价格保护</a></div>
+                        <div><a href="#">退款说明</a></div>
+                        <div><a href="#">返修/退换货</a></div>
+                        <div><a href="#">取消订单</a></div>
+                    </dd>
+                </dl>
+                <dl class="fl fore5">
+                    <dt>
+                        <b></b>
+                        <strong>特色服务</strong>
+                    </dt>
+                    <dd>
+                        <div><a href="#">夺宝岛</a></div>
+                        <div><a href="#">DIY装机</a></div>
+                        <div><a href="#">延保服务</a></div>
+                        <div><a href="#">京东E卡</a></div>
+                        <div><a href="#">节能补贴</a></div>
+                        <div><a href="#">京东通信</a></div>
+                    </dd>
+                </dl>
+                <div class="fr peisong">
+                    <div class="peisong-top"><h3>京东自营覆盖区县</h3></div>
+                    <div class="peisong-content">
+                        <p>京东已向全国1864个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务.</p>
+                        <p align="right"><a href="#">查看详情 > </a></p>
+                    </div>
+                </div>
+                <span class="clr"></span>
+            </div>
+        </div>
+        <div class="footer-2">
+            <div class="footer-2-in">
+                <div class="links">
+                    <a href="#">关于我们</a> |
+                    <a href="#">联系我们</a> |
+                    <a href="#">商家入驻</a> |
+                    <a href="#">营销中心</a> |
+                    <a href="#">手机京东</a> |
+                    <a href="#">友情链接</a> |
+                    <a href="#">销售联盟</a> |
+                    <a href="#">京东社区</a> |
+                    <a href="#">京东公益</a> |
+                    <a href="#">English Site</a> |
+                </div>
+                <div class="copyright">
+                    北京市公安局朝阳分局备案编号110105014669  |  京ICP证070359号  |  互联网药品信息服务资格证编号(京)-经营性-2014-0008  |  新出发京零 字第大120007号
+                    <br/>
+                    音像制品经营许可证苏宿批005号  |  出版物经营许可证编号新出发(苏)批字第N-012号  |  互联网出版许可证编号新出网证(京)字150号
+                    <br/>
+                    网络文化经营许可证京网文[2011]0168-061号  违法和不良信息举报电话：4006561155  Copyright © 2004-2014  京东JD.com 版权所有
+                    <br/>
+                    京东旗下网站：360TOP  拍拍网  网银在线
+                </div>
+                <div class="authentication"><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202007080200026" target="_blank" rel="nofollow"><img width="108" height="40" alt="经营性网站备案中心" src="http://img10.360buyimg.com/da/20110329/108_40_zZOKnl.gif" class="err-product"></a><script type="text/JavaScript">function CNNIC_change(eleId){var str= document.getElementById(eleId).href;var str1 =str.substring(0,(str.length-6));str1+=CNNIC_RndNum(6); document.getElementById(eleId).href=str1;}function CNNIC_RndNum(k){var rnd=""; for (var i=0;i < k;i++) rnd+=Math.floor(Math.random()*10); return rnd;}</script><a href="https://ss.knet.cn/verifyseal.dll?sn=2008070300100000031&amp;ct=df&amp;pa=294005" tabindex="-1" id="urlknet" target="_blank" rel="nofollow"> <img alt="可信网站" name="CNNIC_seal" border="true" width="108" height="40" oncontextmenu="return false;" onClick="CNNIC_change('urlknet')" src="http://img11.360buyimg.com/da/g8/M03/0C/0E/rBEHaFCFC5QIAAAAAAASVQX9RAYAACb2wHUV1kAABJt760.gif" class="err-product"></a><a href="http://www.bj.cyberpolice.cn/index.do" target="_blank" rel="nofollow"><img width="108" height="40" alt="朝阳网络警察" src="http://img12.360buyimg.com/da/g5/M02/0D/17/rBEIDE_nzcIIAAAAAAB30mYXo5QAACrhACj22IAAHfq378.png" class="err-product"></a><a href="https://search.szfw.org/cert/l/CX20120111001803001836" target="_blank" rel="nofollow"><img width="112" height="40" src="http://img13.360buyimg.com/da/20120221/112_40_WvArIl.png" class="err-product"></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

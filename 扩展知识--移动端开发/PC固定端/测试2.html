@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>table的流式布局--原理就是把table的宽度设置为100%.里面的布局的宽度会变小的</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <style>
+        table {
+            width:100%;
+            height:auto;
+            border-collapse: collapse;
+            margin:0 auto;
+        }
+        .header {
+            width:120px;
+            background:red;
+        }
+        .footer {
+            width:120px;
+            background:black;
+        }
+        .aside {
+            width:200px;
+            height:500px;
+            background-color:rosybrown;
+        }
+        .section {
+            width:760px;
+            background-color:darkorange;
+        }
+
+    </style>
+</head>
+<body>
+    <table border="0">
+        <tr>
+            <td colspan="2" class="header">header</td>
+        </tr>
+        <tr>
+            <td class="aside">aside</td>
+            <td class="section">section</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="footer">footer</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            border:0;
+            color:#fff;
+            box-sizing:border-box;
+
+        }
+        ul,li {
+            list-style:none;
+        }
+
+    </style>
+   <!-- 整体布局 ： container + 布局名称   (满屏的就直接布局名称banner,search)
+    小布局 : 布局名称 - 功能(或者是位置，或者是简单的数字)
+    再小的布局:布局名称 - 功能 - 内容-->
+</head>
+<body>
+    <!--一般我会写一个最大的，但不挂载到html,body上，可能这部分会有背景图片神马的，所以，这里的DIV是包含我所有内容的一个大的DIV-->
+    <!--整体布局的选择，最好是能被2,3,4整除的，这样，分成2,3,4分的时候比较方便,1170 ,960,1200都是比较合适的选择 -->
+    <!--整体布局在首页和内页都是不变的，他们都是公共的样式放在一起的。公共的CSS放在base.css文件中每一个页面都引用，每个页面引用自己的CSS文件即可，解决了命名冲突的问题了。-->
+
+    <!--整体布局开始 -->
+
+    <!--<div id="all">
+        <div id="header">导航</div>  1170
+        <div id="container + 整体布局名称">小布局</div> 1170
+        <div id="container + 整体布局名称">小布局</div> 1170
+        <div id="footer">尾部</div>   1170
+    </div>     所有的布局都是这样的-->
+
+
+    <!--HTML5中，他们会变成 header ,nav ,footer -->
+    <!--<div id="all">
+        <header><nav></nav></header>  1170
+         <div id="container + 整体布局名称">小布局</div> 1170
+        <div id="container + 整体布局名称">小布局</div> 1170
+        <footer></footer>             1170
+    </div> HTML5 中是这样的-->
+
+
+    <div id="all">
+        <div id="header" style="width:100%;height:50px;background:#ccc;">
+            <div class="header-in" style="width:1170px;height:50px;background:#000;margin:0 auto">
+                <div id="nav" style="height:50px;">
+                    <ul style="zoom:1;overflow:hidden;height:50px;line-height: 50px;">
+                        <li style="float:left">首页</li>
+                        <li style="float:left">公司介绍</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--小布局开始 -->
+        <div id="container + 布局名称" style="width:1170px;height:1170px;margin:0 auto;background:#ddd;">
+            <!--整体布局  整体布局 + 小布局  这种命名方式 -->
+            <div id="container + 布局名称" style="clear:both;zoom:1;overflow:hidden;">
+                <div class="布局名称-left" style="width:585px;height:100px;float:left;background-color:darkred"></div>
+                <div class="布局名称-right" style="width:585px;height:100px;float:right;background-color:darkblue"></div>
+            </div>
+            <div id="container + 布局名称" style="zoom:1;overflow:hidden">
+                <div class="布局名称-功能" style="width:390px;height:100px;float:left;background-color: saddlebrown"></div>
+                <div class="布局名称-功能" style="width:390px;height:100px;float:left;background-color: salmon"></div>
+                <div class="布局名称-功能" style="width:390px;height:100px;float:left;background-color:slateblue"></div>
+            </div>
+            <div id="container + 布局名称" style="zoom:1;overflow:hidden">
+                <div class="布局名称-one" style="width:292.5px;height:100px;float:left;background-color: red"></div>
+                <div class="布局名称-two" style="width:292.5px;height:100px;float:left;background-color: yellow"></div>
+                <div class="布局名称-three" style="width:292.5px;height:100px;float:left;background-color:blue"></div>
+                <div class="布局名称-four" style="width:292.5px;height:100px;float:left;background-color:green"></div>
+            </div>
+            <!-- 小布局里面的图片和文字 -->
+            <!--文字性的-->
+            <div id="container + 布局名称" style="width:1170px;height:100px;margin:0 auto;background-color: #000;">
+                <h1 class="布局名称-title">标题</h1>
+                <ul class="布局名称-list" style="zoom:1;overflow:hidden;">内容
+                    <li style="float:left;">1</li>
+                    <li style="float:left;">2</li>
+                    <li style="float:left;">3</li>
+                </ul>
+                <!--公共的，其实可以用这种形式，比较方便-->
+                <div class="mt">标题</div>
+                <div class="mc">内容</div>
+
+               <!-- html5中的应用：
+                <article>
+                    <h1>文章的标题</h1>
+                    <p>文章的内容</p>
+                </article>
+                <section>
+                    <h1>文章的标题</h1>
+                    <p>里面直接放文章的内容</p>
+                </section>
+                <hgroup>
+                    <h1>最大的标题</h1>
+                    <h2>稍微小点的标题</h2>
+                </hgroup>   如果有两个标题的话，可以使用这个来给section里面的标题设置组-->
+
+
+            </div>
+            <!--纯图片的-->
+            <div id="container tupian" style="width:1170px;height:100px;margin:0 auto;background-color: #aaa;">
+                <div class="tupian-list" style="zoom:1;overflow:hidden;">
+                    <div class="tupian-item" style="float:left;width:390px;height:100px;background:darkmagenta;text-align:center;line-height:100px;">
+                        <a href="#"><img src=""/>图片</a>
+                    </div>
+                    <div class="tupian-item" style="float:left;width:390px;height:100px;background:darkmagenta;text-align:center;line-height:100px;">
+                        <a href="#"><img src=""/>图片</a>
+                    </div>
+                    <div class="tupian-item" style="float:left;width:390px;height:100px;background:darkmagenta;text-align:center;line-height:100px;">
+                        <a href="#"><img src=""/>图片</a>
+                    </div>
+                </div>
+            </div>
+            <!--图片加文字 一般用于内容中有图片和文字这些信息的，这里又分为图片和文字并排，图片和文字上下排列两种 -->
+            <!--图片和文字并排-->
+            <div id="container chanpin" style="width:1170px;height:200px;margin:0 auto;background-color: #bbb;">
+                <ul class="chanpin-list">
+                    <li class="chanpin-item" style="padding:0 10px;zoom:1;overflow:hidden;">
+                        <div class="chanpin-item-img" style="float:left;"><img src="http://img10.360buyimg.com/N4/jfs/t175/69/1841832942/98936/91e1a750/53bb8d52N65fa727b.jpg"/></div>
+                        <div class="chanpin-item-title">图片的标题</div>
+                        <div class="chanpin-item-detail">图片的内容</div>
+                    </li>
+                    <li class="chanpin-item" style="padding:0 10px;zoom:1;overflow:hidden;">
+                        <div class="chanpin-item-img" style="float:left;"><img src="http://img10.360buyimg.com/N4/jfs/t175/69/1841832942/98936/91e1a750/53bb8d52N65fa727b.jpg"/></div>
+                        <div class="chanpin-item-title">图片的标题</div>
+                        <div class="chanpin-item-detail">图片的内容</div>
+                    </li>
+                </ul>
+            </div>
+            <!--图片和文字上下排列 -->
+            <div id="container chanpin" style="width:1170px;height:200px;margin:0 auto;background-color: #ccc;">
+
+                <ul class="chanpin-list" style="zoom:1;overflow:hidden;">
+                    <li class="chanpin-item" style="float:left;padding:0 10px;">
+                        <div class="chanpin-item-img"><img src="http://img10.360buyimg.com/N4/jfs/t175/69/1841832942/98936/91e1a750/53bb8d52N65fa727b.jpg"/></div>
+                        <div class="chanpin-item-name">图片的名字</div>
+                        <div class="chanpin-item-price">图片的内容</div>
+                    </li>
+                    <li class="chanpin-item" style="float:left;padding:0 10px;">
+                        <div class="chanpin-item-img"><img src="http://img10.360buyimg.com/N4/jfs/t175/69/1841832942/98936/91e1a750/53bb8d52N65fa727b.jpg"/></div>
+                        <div class="chanpin-item-name">图片的名字</div>
+                        <div class="chanpin-item-price">图片的内容</div>
+                    </li>
+                    <li class="chanpin-item" style="float:left;padding:0 10px;">
+                        <div class="chanpin-item-img"><img src="http://img10.360buyimg.com/N4/jfs/t175/69/1841832942/98936/91e1a750/53bb8d52N65fa727b.jpg"/></div>
+                        <div class="chanpin-item-name">图片的名字</div>
+                        <div class="chanpin-item-price">图片的内容</div>
+                    </li>
+                    <li class="chanpin-item" style="float:left;padding:0 10px;">
+                        <div class="chanpin-item-img"><img src="http://img10.360buyimg.com/N4/jfs/t175/69/1841832942/98936/91e1a750/53bb8d52N65fa727b.jpg"/></div>
+                        <div class="chanpin-item-name">图片的名字</div>
+                        <div class="chanpin-item-price">图片的内容</div>
+                    </li>
+                </ul>
+            </div>
+           <!-- HTML5的应用
+            <figure>
+                <img src=""/>
+                <figcaption>图片的文字信息</figcaption>
+            </figure>-->
+            <div id="jd-1" style="width:1170px;height:270px;margin:0 auto;background-color: #ddd;">
+                <h1 style="text-align:center;">H5新特性总结</h1>
+
+            </div>
+        </div>
+
+        <div id="footer" style="width:100%;height:100px;background:#ccc;">
+            <div class="footer-in" style="width:1170px;height:100px;background:#000;margin:0 auto"></div>
+        </div>
+    </div>
+
+</body>
+</html>
+<!--我建议特效方面，能用CSS3+JQ解决的就解决，插件基本不太实用了，而且也没必要在JQ插件上再总结任何知识了。-->
+<!--PC端因为都是固定的高宽，所以，基本无论是整体布局还是小布局还是具体的文字、图片都会有高宽的值，尽量少的使用即可-->

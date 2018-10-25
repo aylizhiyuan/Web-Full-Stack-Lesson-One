@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>CSS3的特性运用</title>
+    <script type="text/javascript" src="moblie-js/jquery-2.0.3.js"></script>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            border:0;
+            box-sizing:border-box;
+        }
+        .trans {
+            display:inline-block;
+            padding:1px 8px;
+            -webkit-transition-property: background-color;
+            -webkit-transition-duration:0.3s;
+            -webkit-transition-timing-function: ease;
+        }
+        .trans:hover {
+            background-color:#486AAA;
+            color:#fff;
+        }
+        .trans_box {
+            display:inline-block;
+            margin:10px;
+            padding:20px 10px;
+            border:1px solid #beceeb;
+            background-color:#f0f3f9;
+        }
+        /*倾斜*/
+        .trans_skew {  transform: skew(35deg); }
+        /*缩放*/
+        .trans_scale { transform:scale(1,0.5); }
+        /*旋转*/
+        .trans_rotate {  transform:rotate(45deg); }
+        /*偏移*/
+        .trans_translate {  transform:translate(10px, 20px); }
+        .trans_rotate_skew_scale_translate {
+        transform:skew(30deg) scale(1.1,1.1) rotate(40deg) translate(10px, 20px);
+        }
+        /*综合的例子，配合过渡和变化，变化就会有一个渐变的效果，而不是生硬的变化*/
+        .trans_effect {
+            display:block;
+            line-height:100px;
+            width:100px;
+            background:#beceeb;
+            margin:30px auto;
+            text-align:center;
+            -webkit-transition:all 2s ease-in-out;
+            -moz-transition:all 2s ease-in-out;
+            -o-transition:all 2s ease-in-out;
+            -ms-transition:all 2s ease-in-out;
+            transition:all 2s ease-in-out;
+        }
+        /*变化的属性在hover中,动画的设置在变化的DIV里面。*/
+        .trans_effect:hover {
+            -webkit-transform:rotate(720deg) scale(2,2);
+            -moz-transform:rotate(720deg) scale(2,2);
+            -o-transform:rotate(720deg) scale(2,2);
+            -ms-transform:rotate(720deg) scale(2,2);
+            transform:rotate(720deg) scale(2,2);
+        }
+        /*动画的运用*/
+        @-webkit-keyframes resize {
+            0% {
+                padding: 0;
+            }
+            50% {
+                padding: 0 20px;
+                background-color:rgba(190, 206, 235, 0.2);
+            }
+            100% {
+                padding: 0 100px;
+                background-color:rgba(190, 206, 235, 0.9);
+            }
+        }
+        /*直接引入这个动画即可，比上两个要强的太多。*/
+        .test_box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #beceeb;
+            background-color: #f0f3f9;
+            margin: 40px auto;
+            -webkit-animation-name: resize;
+            -webkit-animation-duration: 1.5s;
+            -webkit-animation-iteration-count: 4;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-timing-function: ease-in-out;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<!--过渡transition，一般都是实现非常简单的CSS变化，只要值改变了，过渡就会发生，鼠标点击了，HOVER了，焦点事件的话-->
+<!--如果不设置transition,可能这个效果就会非常的突兀，加上了，就变的有点动画的效果了。-->
+<a href="/" class="trans">经过我~~</a>
+<!--变化，transform,类似于PS里头的ctrl+T 自由变化，无非就是放大（缩放），倾斜，旋转，偏移-->
+<span class="trans_box trans_skew">transform: skew(35deg);</span>
+<span class="trans_box trans_scale">transform:scale(1,0.5);</span>
+<span class="trans_box trans_rotate">transform:rotate(45deg);</span>
+<span class="trans_box trans_translate">transform:translate(10px, 20px);</span>
+<span class="trans_box trans_rotate_skew_scale_translate">transform:skew(30deg) scale(1.1,1.1) rotate(40deg) translate(10px, 20px);</span>
+<!--结合过渡的变化效果-->
+<a href="" id="cc" class="trans_effect">摸我！</a>
+<!--<script>
+    $('#cc').click(function(e){
+        e.preventDefault();
+        $(this).toggleClass('bb');
+    })
+</script>-->
+<!--transform 和 transition 需要经过用户触发才会表现出动态的效果，这些触发条件可以是:link、:visited、:hover、:active 和 :focus 五个 CSS 伪类，
+也可以是 click、focus 等 JavaScirpt 事件，添加class就好了，如果没有设置触发条件而直接给元素设置 transform 或 transition ，用户只能看到元素的终态而没有动画过程。
+animation 则无须触发条件，开发者只需为元素绑定动画即可。-->
+<!--动画的运用，跟上边最主要的区别在于可以控制时间上的不同变化了，上边的都是直线型的变化，而动画可以控制在某个时间点的具体变化，类似于flash中的帧-->
+<div class="anim_box test_box"></div>
+
+<p>
+    CSS决定了HTML的样式，这些样式都有：
+    任何HTML标签都可以拥有以下的样式设置，任何HTML标签都可以拥有这些样式的
+    1.定位：绝对定位，相对定位，窗口定位
+    2.布局：行内元素inline，块级元素block,浮动float,显示display,overflow 当超出布局的大小的时候，应该做些什么
+    3.尺寸：宽度、高度、最大最小宽度、最大最小高度
+    4.外边距:margin
+    5.内边距:padding
+    6.边框：border
+    7.背景：background
+    8.颜色：color
+    9.字体:font，font-size font-family
+    10.文本:text-transform 转化为大写  white-space 处理空格的方式 text-align 排列 wordspacing 字体间距 letterspacing 单词间距 text-indent 文字缩进 line-height 文字行高  vertical-align 内联文字的垂直排列方式 overflow-wrap 超出宽度的时候是否溢出
+    11.文本装饰：text-decoration
+    12.列表：list-style
+    13.转化：transform
+    14.过渡：transition
+    15.动画：animation
+    
+
+</p>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="moblie-css/bootstrap.css"/>
+    <style>
+        * {
+            color:#000;
+            box-sizing:border-box;
+        }
+    </style>
+    <!--整体布局：container + 布局名称  (整体布局里面必须包含row)
+    小布局: col-xs-12 col-md-6 基本被占用了，可以不用考虑了
+    再小的布局: 布局名称 - 功能就可以了
+    bootstrap很多样式都是写好的，基本命名不是问题，需要特别设置的情况，才会重新写个class，一般用自带的就OK了。-->
+
+
+</head>
+<body style="margin-bottom:100px;">
+    <!--在bootstrap中，container是整体布局的大小，它会根据屏幕分辨率的大小进行实时的调整，这个我们不用特别关心，毕竟要在PC端和移动端完美展示-->
+    <!--也就是说我们不太用考虑整体布局的设置神马的，只需要了解整体布局是container + 这个整体布局的名字 就可以了-->
+    <!--这个名字的作用也不过仅仅是设置下整体布局的字体，清除浮动等等。-->
+    <div id="all">
+        <div class="header">
+            <nav class="navbar navbar-default navbar-inverse">
+                <div class="container">
+                    <!--头部定义-->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"></a>
+                    </div>
+                    <!--内容开始-->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <!--导航-->
+                        <ul class="nav navbar-nav">
+                            <li><a href ui-sref="home" class="logo"></a></li>
+                            <li ui-sref-active="active"><a href ui-sref="home">我的管理页面</a></li>
+                            <li ui-sref-active="active"><a href ui-sref="about">关于我</a></li>
+                        </ul>
+                        <!--右侧文字-->
+                        <p class="navbar-right navbar-text">前端爱好者v1.0</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--先写一个整体的row,每一个整体布局在一般情况下只需要写一个row就可以了。除非是在小布局里面还要再写一个自适应的小布局，才用row -->
+        <!--然后就是我们的小布局了，小布局都是用col-设备-百分比 来针对不同的设备进行设置百分比 -->
+        <!--如需嵌套，就在里面继续row + 布局名字-->
+        <div class="wenzi container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="myicon"><h1 class="text-center">快</h1></div>
+                    <h3 class="text-center">超快超越对手</h3>
+                    <p class="text-center">快，用最快的速度，上首页！免去漫长的等待，让您一次付款，快速见效</p>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="myicon"><h1 class="text-center">稳</h1></div>
+                    <h3 class="text-center">持续稳定首页</h3>
+                    <p class="text-center">正规白帽的优化手段，保证优化期间排名的持续性，让您不再为排名忽高忽低而担心</p>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="myicon"><h1 class="text-center">准</h1></div>
+                    <h3 class="text-center">精准定位客户</h3>
+                    <p class="text-center">我们从来不向您推荐没有效果的关键词，我们保证我们的每个关键词都能给您带来切实的客户</p>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="myicon"><h1 class="text-center">心</h1></div>
+                    <h3 class="text-center">我们一直用心</h3>
+                    <p class="text-center">客户最担心的不管不问，绕来绕去，搪塞推脱，我们从来不会，我们只会用心做好</p>
+                </div>
+            </div>
+        </div>
+        <div class="tupian-list container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 text-center">
+                    <!--如果里面不涉及边框的情况，直接使用<Img>和<p>标签就可以了-->
+                    <div class="thumbnail" style="max-width:310px;margin:0 auto;">
+                        <!--图片最好跟着布局的大小来走，如果小于布局的大小了，那么只能让它居中显示了,但这里，依然最好让它跟着布局的大小走-->
+                        <!--图片最好准备的很大，让它占据一行的时候，也能完美的显示出来才行啊-->
+                        <img class="img-responsive" src="http://static.bootcss.com/www/assets/img/codeguide.png" width="300"/>
+                        <div class="caption" style="height:150px;overflow-y: hidden;">
+                            <h3>产品标题</h3>
+                            <p>产品的简介产品的简介产品的简介产品的简介产品的简介产品的简介</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 text-center">
+                    <div class="thumbnail" style="max-width:310px;margin:0 auto;">
+                        <img class="img-responsive" src="http://static.bootcss.com/www/assets/img/codeguide.png" width="300"/>
+                        <div class="caption" style="height:150px;overflow-y: hidden;">
+                            <h3>产品标题</h3>
+                            <p>产品的简介产品的简介产品的简介产品的简介产品的简介产品的简介</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 text-center">
+                    <div class="thumbnail" style="max-width:310px;margin:0 auto;">
+                        <img class="img-responsive" src="http://static.bootcss.com/www/assets/img/codeguide.png" width="300"/>
+                        <div class="caption" style="height:150px;overflow-y: hidden;">
+                            <h3>产品标题</h3>
+                            <p>产品的简介产品的简介产品的简介产品的简介产品的简介产品的简介</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 text-center">
+                    <div class="thumbnail" style="max-width:310px;margin:0 auto;">
+                        <img class="img-responsive" src="http://static.bootcss.com/www/assets/img/codeguide.png" width="300"/>
+                        <div class="caption" style="height:150px;overflow-y: hidden;">
+                            <h3>产品标题</h3>
+                            <p>产品的简介产品的简介产品的简介产品的简介产品的简介产品的简介</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tupian container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9">
+                    <div class="media" style="border-bottom: 1px dashed #ddd;padding: 16px 0 10px 0;margin: 0;">
+                        <div class="media-left" style="padding-top: 16px;padding-right: 30px;text-align: center;">
+                            <a href="#" style="display:block;"><img src="http://f1.howzhi.com/avatar/2014/11-25/1359131e28a9803288.jpg"  style="width:60px;height:60px;border-radius:50%;margin-bottom:10px;"/></a>
+                            <p style="max-height:40px;text-align:center;width:70px;">曹佳</p>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading title" style="max-height:20px;margin:10px 0;font-weight:bold;">我的标题</h5>
+                            <div class="content" style="height:70px;overflow:hidden;line-height: 24px;">Elena Shumilova ,俄罗斯摄影师，同时也是位建筑师。她爱上摄影的原因是想用镜头记录下孩子们成长的每一个瞬间，Elena Shumilova擅长拍摄生活中的场景，她的作品基本上都是利用自然光完成的，色调温暖，给人温馨的感觉。..</div>
+                        </div>
+                    </div>
+                    <div class="media" style="border-bottom: 1px dashed #ddd;padding: 16px 0 10px 0;margin: 0;">
+                        <div class="media-left" style="padding-top: 16px;padding-right: 30px;text-align: center;">
+                            <a href="#" style="display:block;"><img src="http://f1.howzhi.com/avatar/2014/11-25/1359131e28a9803288.jpg"  style="width:60px;height:60px;border-radius:50%;margin-bottom:10px;"/></a>
+                            <p style="max-height:40px;text-align:center;width:70px;">曹佳</p>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading title" style="max-height:20px;margin:10px 0;font-weight:bold;">我的标题</h5>
+                            <div class="content" style="height:70px;overflow:hidden;line-height: 24px;">Elena Shumilova ,俄罗斯摄影师，同时也是位建筑师。她爱上摄影的原因是想用镜头记录下孩子们成长的每一个瞬间，Elena Shumilova擅长拍摄生活中的场景，她的作品基本上都是利用自然光完成的，色调温暖，给人温馨的感觉。..</div>
+                        </div>
+                    </div>
+                    <div class="media" style="border-bottom: 1px dashed #ddd;padding: 16px 0 10px 0;margin: 0;">
+                        <div class="media-left" style="padding-top: 16px;padding-right: 30px;text-align: center;">
+                            <a href="#" style="display:block;"><img src="http://f1.howzhi.com/avatar/2014/11-25/1359131e28a9803288.jpg"  style="width:60px;height:60px;border-radius:50%;margin-bottom:10px;"/></a>
+                            <p style="max-height:40px;text-align:center;width:70px;">曹佳</p>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading title" style="max-height:20px;margin:10px 0;font-weight:bold;">我的标题</h5>
+                            <div class="content" style="height:70px;overflow:hidden;line-height: 24px;">Elena Shumilova ,俄罗斯摄影师，同时也是位建筑师。她爱上摄影的原因是想用镜头记录下孩子们成长的每一个瞬间，Elena Shumilova擅长拍摄生活中的场景，她的作品基本上都是利用自然光完成的，色调温暖，给人温馨的感觉。..</div>
+                        </div>
+                    </div>
+                    <div class="media" style="border-bottom: 1px dashed #ddd;padding: 16px 0 10px 0;margin: 0;">
+                        <div class="media-left" style="padding-top: 16px;padding-right: 30px;text-align: center;">
+                            <a href="#" style="display:block;"><img src="http://f1.howzhi.com/avatar/2014/11-25/1359131e28a9803288.jpg"  style="width:60px;height:60px;border-radius:50%;margin-bottom:10px;"/></a>
+                            <p style="max-height:40px;text-align:center;width:70px;">曹佳</p>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading title" style="max-height:20px;margin:10px 0;font-weight:bold;">我的标题</h5>
+                            <div class="content" style="height:70px;overflow:hidden;line-height: 24px;">Elena Shumilova ,俄罗斯摄影师，同时也是位建筑师。她爱上摄影的原因是想用镜头记录下孩子们成长的每一个瞬间，Elena Shumilova擅长拍摄生活中的场景，她的作品基本上都是利用自然光完成的，色调温暖，给人温馨的感觉。..</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="chanpin container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 text-center">
+                        <img src="image/logo.jpg"  class="img-responsive"/>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6" style="line-height:30px;">
+                    <div class="p-title">产品的名称---给你不一样的感受，给你不同的全新体验</div>
+                    <div class="p-price">产品的价格</div>
+                    <div class="p-color">产品的颜色</div>
+                    <div class="p-size">产品的尺寸</div>
+                    <div class="p-num">产品的数量</div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-fixed-bottom" style="width:100%;background:#000;height:80px;font-size:20px;color:#ffffff;">
+            <div class="container footer">
+                <div class="media">
+                    <div class="pull-right" style="color:#fff;">
+                        不得转载，违版必究!
+                    </div>
+                    <div class="media-body" >
+                        <p style="color:#fff;">这里是bootstrap 的常规写法</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!--bootstrap的JS代码可能不能简单的像PC端的那样，直接写我们的插件代码，因为它的特效必须兼容PC端和移动端这两种设备才行，复杂的写起来又特别的麻烦，这里，我们只能-->
+<!--根据实际的情况，选择比较好的插件来解决，既让它在PC端完美展示，又能兼容移动端才行。所以，在选择插件的时候，一定得考虑这个因素。-->
+<!--在设计这些特效的时候，我们遵循这么一个原则：能用CSS3样式解决的，绝对不用JS解决-->
+<!--感觉PC端没必要使用bootstrap,纯移动端的也没必要用，但要兼容pc和移动，bootstrap感觉舒服多了，毕竟是响应式的布局，但它的JS代码却不够强大，只提供了简单的-->
+<!--现在，不管是什么类型的特效，要想兼容PC和移动端，在考虑的时候，一定得慎重 -->
+<!--所以，我只能目前这么考虑，bootstrap只适合于简单的PC端网站的应用，不适合纯移动端的。目前来讲，PC端的网站和移动端的网站终究要分开写的。-->

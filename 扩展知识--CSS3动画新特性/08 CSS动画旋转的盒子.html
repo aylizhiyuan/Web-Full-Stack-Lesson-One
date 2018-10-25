@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>动画的使用</title>
+    <style>
+        div {
+            width:10px;
+            height:10px;
+            background-color:red;
+            position:absolute;
+            top:300px;
+            left:calc(50% - 100px);
+        }
+
+        section {
+            width:100px;
+            height:100px;
+            background-color:red;
+            /*动画名称*/
+            animation-name:donghua,donghua2;
+            /*动画的时间*/
+            animation-duration:5s;
+            /*动画的贝塞尔曲线*/
+            animation-timing-function:linear;
+            /*动画的循环次数 */
+            animation-iteration-count: infinite;
+            /*转换的参考点不再是中心点了，而是外围的点*/
+            transform-origin: -100px -100px;
+            position:absolute;
+            top:400px;
+            left:50%;
+        }
+        @keyframes donghua {
+            from {
+                transform:rotate(0);
+            }
+            to {
+                transform:rotate(360deg);
+            }
+        }
+        @keyframes donghua2 {
+            0% {
+                background:red;
+            }
+            10% {
+                background:blue;
+            }
+            20% {
+                background:yellow;
+            }
+            30% {
+                background:green;
+            }
+            40% {
+                background:cyan;
+            }
+            50% {
+                background:peru;
+            }
+            70% {
+                background:saddlebrown;
+            }
+            100% {
+                background:darkgoldenrod;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div></div>
+<section></section>
+
+</body>
+</html>

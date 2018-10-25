@@ -1,0 +1,370 @@
+/*
+ 鍩虹璁剧疆
+ * */
+*{
+    box-sizing: border-box;
+}
+body{
+    color: #000;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+figure{
+    margin: 0;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+/*
+ 瀛椾綋,涓嶄娇鐢╣oogle瀛椾綋锛屼笅杞藉埌鏈湴鏉ヤ娇鐢�
+ **/
+/* vietnamese */
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Dancing Script Regular'), local('DancingScript-Regular'), url(../font/google/DK0eTGXiZjN6yA8zAEyM2fRMc6C39aem-aUPzsV2c2w.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Dancing Script Regular'), local('DancingScript-Regular'), url(../font/google/DK0eTGXiZjN6yA8zAEyM2e87R-l0-Xx_7cYc0ZX1ifE.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Dancing Script Regular'), local('DancingScript-Regular'), url(../font/google//DK0eTGXiZjN6yA8zAEyM2Ud0sm1ffa_JvZxsF_BEwQk.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+>>>>>>> e2f43f8445608d9dd17258b5abcf22dcd280efee
+}
+/*
+ header閮ㄥ垎
+ * */
+header{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: rgba(0,0,0,0);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    transition: all .5s;
+}
+header.on{
+    padding: 3px 0;
+    background-color: rgba(0,0,0,.7);
+}
+header .logo{
+    float: left;
+}
+header .logo img{
+    display: inline-block;
+    vertical-align: middle;
+}
+header .logo span.siteName{
+    font-size:3em;
+    vertical-align: middle;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    /*
+     http://www.googlefonts.cn/
+     * */
+}
+header .topMenu{
+    float: right;
+}
+header .topMenu li{
+    float: left;
+    margin: 20px;
+}
+header .topMenu li a{
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,.2);
+    transition: color .5s;
+}
+header .topMenu li.active a,
+header .topMenu li a:hover{
+    color: #339BEB;
+}
+/*
+ 鐒︾偣閮ㄥ垎
+ * */
+.banner{
+    color: #333;
+    background: url(../img/banner.jpg) no-repeat center top;
+    background-size: cover;
+}
+.banner .caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.banner .caption h1 span{
+    color: #339BEB;
+}
+.banner .caption p{
+    text-align: left;
+    line-height: 1.8;
+    font-family: "寰蒋闆呴粦";
+}
+.banner .caption p em{
+    background-color:rgba(0,0,0,.2);
+    color: #fff;
+    padding: 2px 4px;
+    font-style: normal;
+    text-shadow: none;
+}
+/*
+ 鍏充簬閮ㄥ垎
+ * */
+section{
+    padding: 50px 0px;
+    line-height: 2;
+    min-height: 400px;
+    position: relative;
+}
+section:nth-of-type(2n+3)::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    box-shadow: inset 0px 0px 100px 10px rgba(0,0,0,.5);
+}
+section h2{
+    text-align: center;
+    font-family: "寰蒋闆呴粦";
+    margin: 0px;
+}
+section h2+p{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+.about{
+
+}
+.about .img{
+    width: 49%;
+    float: left;
+}
+.about .img img{
+    width: 100%;
+    height: auto;
+}
+.about .note{
+    width: 49%;
+    float: right;
+    text-align: left;
+}
+.about .note p:first-child{
+    margin-top: 0px;
+}
+.about .note ul{
+    counter-reset:testname 0;
+}
+.about .note li{
+    counter-increment:testname 1;
+    position: relative;
+    padding-left: 2em;
+    cursor: pointer;
+    list-style: none;
+}
+.about .note li::before{
+    content:counter(testname);
+    width: 1.2em;
+    height: 1.2em;
+    border: 1px dashed #000;
+    text-align: center;
+    line-height: 1.2;
+    border-radius: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0.3em;
+    transition:transform .5s;
+    transform: translate(0px);
+}
+.about .note li:hover::before{
+    transform: translate(0.5em);
+}
+/*
+ 鏈嶅姟妯″潡
+ * */
+.service{
+    min-height: 600px;
+    background: url(../img/desktop.jpg) center center no-repeat;
+    background-size: cover;
+}
+.service li{
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+    text-align: right;
+    cursor: pointer;
+    min-height: 80px;
+}
+.service li::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.service li:nth-child(2n){
+    margin-right: 0px;
+    text-align: left;
+
+}
+.service li i{
+    float: right;
+    padding: 12px 0px 12px 20px;
+    transition: transform .5s,color .5s;
+}
+.service li:hover i{
+    transform: scale(1.2);
+    color: #339BEB;
+}
+.service li:nth-child(2n) i{
+    float: left;
+    padding: 12px 20px 12px 0px;
+}
+.service li h3{
+    display: inline-block;
+    margin: 0px;
+}
+/*
+ * 椤圭洰妯″潡
+ * */
+.project{
+
+}
+.project figure{
+    float: left;
+    overflow: hidden;
+    width: 24%;
+    margin: 10px calc(4% / 3) 10px 0px;
+    position: relative;
+    cursor: pointer;
+}
+.project figure:nth-child(4n){
+    margin-right: 0px;
+}
+.project figure img{
+    width: 100%;
+    height: auto;
+    transform: scale(1) rotate(0deg);
+    transition: transform .5s;
+    vertical-align: top;
+}
+.project figure:hover img{
+    transform: scale(1.2) rotate(3deg);
+}
+.project figure figcaption{
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 50%;
+    bottom: 5%;
+    background-color: rgba(255,255,255,.8);
+    padding: 10px;
+}
+.project figure figcaption .time{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color:#339BEB;
+    font-size: 0.8em;
+    text-align: center;
+}
+.project figure figcaption .time .month{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.project figure figcaption h3{
+    margin: 5px 0px 0px 70px;
+}
+.project figure figcaption p{
+    font-size: 0.8em;
+    line-height: 1.5;
+}
+.project figure figcaption .data{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 0.8em;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    background-color: rgba(0,0,0,.2);
+    text-align: right;
+}
+.project figure figcaption .data *{
+    padding: 0px 2px;
+}
+/*
+ * 鑱旂郴鎴戜滑
+ */
+.contact{
+    background: url(../img/android-1869510_1920.jpg) no-repeat center top;
+    background-size: cover;
+    color: #fff;
+}
+.contact .left{
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+.contact .left p{
+    margin-top: 0px;
+}
+.contact li i{
+    padding: 0px 10px 0px 0px;
+}
+.contact .right{
+    float: right;
+    width: 48%;
+    margin-right: 0%;
+}
+.contact .right input,
+.contact .right textarea{
+    width: 100%;
+    padding: 10px 16px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.6);
+}
+::-webkit-input-placeholder{
+    color: #000;
+}
+::-moz-placeholder{
+    color: #000;
+}
+/*
+ footer
+ * */
+footer{
+    text-align: center;
+}

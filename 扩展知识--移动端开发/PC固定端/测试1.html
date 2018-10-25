@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>CSS3的笔记</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <style>
+        /*em跟上级的父元素的字体大小计算出来的，如果嵌套过多的话，计算会特别的麻烦
+        所以，我们要直接根据根元素REM来计算 */
+        body {
+            margin:50px;
+        }
+
+        p {
+           /* font-size:50px;
+            正值阴影
+            text-shadow:1px 1px 1px red;
+            负值阴影
+            text-shadow:-1px -1px 1px red;
+            多重影叠加
+            文本溢出的设置，首先，要设置好宽度，另外，溢出不能换行才可以*/
+
+           /* width:160px;
+            background-color:silver;
+            white-space:nowrap;
+            overflow:hidden;
+            如果我的文本被裁剪了，后边是否自动添加省略号
+            text-overflow: ellipsis;*/
+
+            /*试验阶段的描边
+            font-size:50px;
+            -webkit-text-stroke: 1px red;*/
+        }
+        #div1 {
+            width:200px;
+            height:200px;
+            /*两个必须参数
+            background-image:linear-gradient(orange,green);
+            可以实现位置渐变
+            background-image:linear-gradient(to top right ,orange,green);
+            可以实现角度渐变
+            background-image:linear-gradient(-45deg,orange,green);
+            可以设置百分比,起始位置0%
+            background-image:linear-gradient(-45deg,orange 0%,green 20%,blue 40%,red 100%);*/
+
+           /* 配合背景，实现了一个简单的渐变效果
+            background-color:red;
+            background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0));*/
+
+           /* 重复平铺
+            background-image:repeating-linear-gradient(orange 10px,green 30px);*/
+
+           /* 线性渐变
+            background-image:radial-gradient(orange,green);
+            圆形和椭圆形两种选择,同时可以设置发散的方向
+            background-image:radial-gradient(circle at top,orange,green);
+            可以设置发散的距离
+            background-image:radial-gradient(circle 50px,orange,green);
+            同样拥有重复的背景
+            background-image:repeating-radial-gradient(circle 50px,orange,green);*/
+
+           /* border-image-source 引入背景图片地址
+            border-image-slice  切割引入背景图片
+            border-image-width 边框图片的宽度
+            border-image-repeat 边框背景图片的排列方式
+            border-image-outset 边框背景向外扩张
+            border-image  上面五个属性的简写方式*/
+
+            background-color:green;
+            box-shadow:2px 2px 2px gray;
+           /* 向X轴移动200px,向Y轴移动200px 平移效果
+            transform: translate(200px,200px);*/
+
+            /*缩放功能，大于0的属于放大，小于0的属于缩小
+            两个参数分别是X轴和Y轴的放大缩小
+            transform:scale(1.5);
+            transform:scale(0.5);
+            transform:scale(1.5,2.0);*/
+
+            /*旋转元素，0-360之间，正负值都可以
+            transform:rotate(-45deg);*/
+
+
+            /*倾斜元素，0-360度之间，正负值都可以
+            transform:skew(45deg,20deg);
+            transform:skewX();
+            transform:skewY();*/
+
+            /* 多个值可以用空格分割 */
+
+            /*改变基准点
+            transform:rotate(45deg);
+            *//*transform-origin: center center;
+            transform-origin: 50% 50%;*//*
+            transform-origin: left top;*/
+        }
+        #a {
+            /*如果想要实现3D的效果，需要在这个当前元素这里是IMG图片的父元素上设置这个属性*/
+            /*该属性会设置查看者的位置,必须是像素，角度越远，就相当于你在越远的位置看*/
+            perspective: 1000px;
+            /*指定嵌套的元素如何在3D空间中呈现*/
+            transform-style: preserve-3d;
+
+            /*在父元素这里改变基准点*/
+            perspective-origin: top right;
+
+
+
+        }
+        img {
+            /*3D变形*/
+            /*设置X轴，Y轴，Z轴 */
+            /*transform:translate3d(100px,100px,200px);*/
+            /*只设置Z轴*/
+           /* transform:translateZ(100px);*/
+            /*3D缩放，单独设置无线，需要配合角度*/
+            /*transform:scale3d(1,1,1.5) rotateX(45deg);*/
+            /* 单独设置Z轴 */
+            /*transform:scaleZ(1.5) rotateX(45deg);*/
+            /*3D旋转，一般的旋转只有角度，这里的旋转有四个x,y,z,a a表示角度，XYZ是0或1之间的数值*/
+            /*transform:rotate3d(1,0,0,45deg);*/
+            /*单独设置*/
+            /*transform: rotateX(45deg);*/
+
+            /*3D也是可以改变基准点的*/
+            /*transform: rotateY(45deg);*/
+
+        }
+        #b {
+            width:200px;
+            height:200px;
+            background-color:white;
+            border:1px solid green;
+            /* 设置哪个属性需要过渡效果，none代表没有.all代表所有 */
+           /* transition-property:background-color,color,margin-left;*/
+            /*必须设置过渡的时间 */
+            /*transition-duration:1s;*/
+            /* 过渡的效果，默认是由快到慢，逐渐变慢 ease-in加速，ease-out减速 */
+            /*transition-timing-function: ease;*/
+            /*匀速运动*/
+            /*transition-timing-function: linear;*/
+            /* 跳跃式过渡 */
+           /* transition-timing-function:steps(1,start);
+            transition-timing-function:steps(1,end);*/
+            /*延迟过渡，先不动，再动*/
+            /*transition-delay:1s;*/
+            /*一般用的简写版本*/
+           /* transition:background-color 1s ease 0s,color 1s ease 1s,margin-left 1s ease 0s;*/
+           /* transition:all 1s ease-in 0s;*/
+
+
+
+
+           /*调用这个@keyframes动画*/
+            animation-name:myani;
+            /*这个动画的时间*/
+            animation-duration:1s;
+            /*动画的效果*/
+            animation-timing-function: ease;
+            /*动画的延迟*/
+            /*animation-delay: 1s;*/
+            /*动画的次数*/
+            /*animation-iteration-count: 2;*/
+            /*设置动画缓动的方向 ，alternate是一次向前，一次向后交替*/
+            /*animation-direction: alternate;*/
+            /*停止动画*/
+            /*animation-play-state: paused;*/
+            /*结束后不返回 ,应用的场景是from to 这种,backforwards即使返回，both是根据情况产生*/
+            /*animation-fill-mode: forwards;*/
+            /*简写形式*/
+            animation:myani 1s ease 2 alternate 1s both;
+
+
+
+        }
+        /*#b:hover {
+            background-color:black;
+            color:white;
+            margin-left:100px;
+        }*/
+        /*创建动画效果的第一步，首先要声明一个动画关键帧*/
+        @keyframes  myani{
+            0% {
+                background-color: white;
+                margin-left:0;
+            }
+            50% {
+                background-color:black;
+                margin-left:100px;
+            }
+            100% {
+                background-color: white;
+                margin-left:0;
+            }
+            /* 也可以用from to 这种，从某个状态到某个状态 */
+
+            /*box-sizing :border-box 这样设置后，我们再次设置padding,border的时候不会再盒子累加 ,
+            只会从内部减，这样，我们终于可以脱离计算盒子大小这样的困惑了。哎，做过的人都知道这样有多累，
+            有多麻烦的。不停的计算，不停的计算，最终还得懵
+            */
+
+
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!--<div id="div1">我是HTML5</div>-->
+    <!--<div id="a">
+        <img src="images/test.jpg"/>
+    </div>-->
+    <div id="b">
+        我是html5
+
+    </div>
+
+
+
+</body>
+</html>
