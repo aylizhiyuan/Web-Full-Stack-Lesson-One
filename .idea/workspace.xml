@@ -1,10 +1,361 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/16.md" description="# 智游集团&#10;## nodeJS培训课程" line="125" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0254bac2-83d0-42b0-9e45-62f08b12633f" name="Default" comment="" />
+    <list default="true" id="0254bac2-83d0-42b0-9e45-62f08b12633f" name="Default" comment="修改">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01.md" beforeDir="false" afterPath="$PROJECT_DIR$/01.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Head First HTML5 Programming（中文版）.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css属性.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/css属性.xmind" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/01/FE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/01/content.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/01/jl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/01/salary.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/10/samp.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/10/samp.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/01 columns的用法.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/02 flex布局的用法.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/04 2D变化.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/05 3D变化.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/07 过渡.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/08 CSS动画旋转的盒子.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/10 媒体查询.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/3d图.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/clock.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/jquery-2.0.3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/mao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/pxtoem.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/viewport缩放的实例.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/介绍浏览器内核.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/动画库的使用.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/媒体查询.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/完美居中.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/练习：3D书页.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/补充内容--flex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/补充内容--垂直居中的方案.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--CSS3动画新特性/补充的内容-过渡.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/.idea/bootstrap企业站练习.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/css/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/css/flexslider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/css/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/css/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/css/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/css/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/css/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/css/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/css/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/css/supersized.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/(1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/(2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/(3).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/(4).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/20110101-M-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/20110110-M-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/20120802-M-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/20130802-M-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/2014012-M-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/20140401-M-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/20140402-M-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/20141024-M-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/20141025-M-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/20141026-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/20150108-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/20150109-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/20150110-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/20150305.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/20150422-0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/20150423.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/20150425.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/20150426.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/20150705-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/2015080-0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/20150803.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/201605231.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/201605241.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/210141221-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/babalax.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/babalaxx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/client1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/getqrcode (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/getqrcode.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/gswj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/ico1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/ico3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/ico4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/ico5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/ico6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/ico7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/overlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/img/yblx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/js/jquery.animateNumber.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/js/jquery.appear.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/js/jquery.easing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/js/jquery.flexslider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/js/jquery.mixitup.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/js/jquery.stellar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/js/supersized.3.2.7.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--html5标准PDF版/print.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/.idea/dictionaries/hama.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/.idea/就是移动端怎么地.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/CSS3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/JS touch 事件.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/.idea/HTML5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/css/basic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/css/column.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/images/test.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/disc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/headline.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/hot1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/hot2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/hot3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/hot4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/hot5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/hot6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/hot7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/hot8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/s1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/s2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/s3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/s4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/s5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/s6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/s7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/s8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/search.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/tour1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/tour2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/tour3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/tour4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/tour5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/tour6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/tour7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/tour8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/tour9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/trea1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/trea2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/trea3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/img/trea4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/information.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/scenery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/ticket.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/测试1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/测试2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/测试3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/.idea/PC移动端响应布局.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/adver.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/headline.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/hot1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/hot2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/hot3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/hot4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/hot5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/hot6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/hot7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/hot8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/s1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/s2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/s3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/s4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/s5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/s6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/s7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/s8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/tour1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/tour2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/tour3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/tour4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/tour5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/tour6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/tour7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/tour8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/tour9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/trea1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/trea2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/trea3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/img/trea4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/information.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/scenery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/ticket.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/PC端常用写法.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/bootstrap常用的写法.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/image/arrow_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/image/arrow_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/image/banner1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/image/banner2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/image/banner3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/image/bgnoise_lg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/image/icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/image/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/moblie-css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/moblie-css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/moblie-css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/moblie-css/swiper.3.2.0.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/moblie-js/fastclick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/moblie-js/jquery-2.0.3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/moblie-js/swiper.3.2.0.jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/moblie-js/zepto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport方案/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport方案/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport方案/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport方案/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport方案/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport方案/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport方案/.idea/viewport方案.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport方案/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport方案/autoView.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport方案/css/autoView.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport方案/image/auto-img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport方案/image/auto-img2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport方案/image/m-iphone4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport方案/image/m-iphone5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport方案/image/m-iphone6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport方案/image/m-iphone6p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport方案/image/pc-auto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport方案/js/autoview.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport方案/js/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/viewport缩放的实例.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/了解清楚概念.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东PC端/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东PC端/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东PC端/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东PC端/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东PC端/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东PC端/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东PC端/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东PC端/.idea/京东.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东PC端/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东PC端/images/dizhi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东PC端/images/erweima.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东PC端/images/xing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东PC端/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东PC端/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东PC端/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东PC端/projectFilesBackup/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东PC端/完美居中.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东的max-width方案/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东的max-width方案/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东的max-width方案/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东的max-width方案/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东的max-width方案/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东的max-width方案/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东的max-width方案/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东的max-width方案/.idea/仿京东webapp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东的max-width方案/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东的max-width方案/images/border.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东的max-width方案/images/border1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东的max-width方案/images/jd-sprites.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东的max-width方案/images/seckill-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/京东的max-width方案/京东webapp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/使用rem的基本方案.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/.idea/淘宝的移动端方案.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/Gruntfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/assets/flexible.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/assets/makeGrid.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/build/combo.debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/build/combo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/build/flexible.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/build/flexible.debug.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/build/flexible.debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/build/flexible.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/build/flexible_css.debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/build/flexible_css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/build/makegrid.debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/build/makegrid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/build/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/grid.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/grid.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/src/flexible.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/src/makegrid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/.idea/scopes/scope_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/.idea/移动端布局.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/img/adver.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/img/headline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/img/tour1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/img/tour2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/img/tour3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/img/tour4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/img/tour5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/img/tour6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/img/tour7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/img/tour8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/information.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端/ticket.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端分辨率分析.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端和PC端的主要区别.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端尺寸参考.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/移动端的常用写法.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/扩展知识--移动端开发/自适应页面.html" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -21,32 +372,116 @@
     <session id="139526226">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="2" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="1" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="md" value="1" />
+          <entry key="md" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="PLAIN_TEXT" value="20" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1389707337">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.19" value="2" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="2" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.23" value="2" />
+          <entry key="project.open.time.24" value="2" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.30" value="2" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="21" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="html" value="7" />
+          <entry key="jpg" value="11" />
+          <entry key="md" value="3" />
+          <entry key="png" value="20" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="7" />
+          <entry key="Image" value="31" />
+          <entry key="PLAIN_TEXT" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-441706508">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="5" />
+          <entry key="jpg" value="19" />
+          <entry key="js" value="3" />
+          <entry key="md" value="5" />
+          <entry key="png" value="34" />
+          <entry key="svg" value="1" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="5" />
+          <entry key="Image" value="53" />
+          <entry key="JavaScript" value="3" />
+          <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="1" />
+          <entry key="SVG" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="md" value="87" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Markdown" value="87" />
         </counts>
       </usages-collector>
     </session>
@@ -55,7 +490,65 @@
     <favorites_list name="第一周" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/02/html.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/01.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="218">
+                <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/03/canvasSupport.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/03/dragAndDropSupport.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/02/browserData.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/02/css3-web-design-examples.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/02/html5_css_javascript.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/02/HTML5_Logo_512.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/02/web-browsers.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/02/service_web_standards.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -76,6 +569,11 @@
         <option value="$PROJECT_DIR$/website2/css/page.css" />
         <option value="$PROJECT_DIR$/website2/font/css/font-awesome.min.css" />
         <option value="$PROJECT_DIR$/website2/index.html" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/website1/index.html" />
+        <option value="$PROJECT_DIR$/扩展知识--移动端开发/使用rem的基本方案.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/website1/css/css.css" />
         <option value="$PROJECT_DIR$/02.md" />
         <option value="$PROJECT_DIR$/03.md" />
         <option value="$PROJECT_DIR$/04.md" />
@@ -92,13 +590,8 @@
         <option value="$PROJECT_DIR$/15.md" />
         <option value="$PROJECT_DIR$/16.md" />
         <option value="$PROJECT_DIR$/17.md" />
-        <option value="$PROJECT_DIR$/test.html" />
-        <option value="$PROJECT_DIR$/website1/index.html" />
         <option value="$PROJECT_DIR$/18.md" />
         <option value="$PROJECT_DIR$/19.md" />
-        <option value="$PROJECT_DIR$/扩展知识--移动端开发/使用rem的基本方案.html" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/website1/css/css.css" />
         <option value="$PROJECT_DIR$/01.md" />
       </list>
     </option>
@@ -112,14 +605,12 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/js/mixjs/package.json" />
-      <path value="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/build/package.json" />
-      <path value="$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="x" value="607" />
+    <option name="y" value="34" />
+    <option name="width" value="1272" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -132,8 +623,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="第一阶段WEB技术---HTML+ CSS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="第一阶段WEB技术---HTML+ CSS" type="462c0819:PsiDirectoryNode" />
+              <item name="1第一阶段--HTML+ CSS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1第一阶段--HTML+ CSS" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -151,7 +642,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../第三阶段---社区系统项目" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -249,11 +740,44 @@
       <workItem from="1537428472790" duration="23000" />
       <workItem from="1537428520945" duration="1228000" />
       <workItem from="1540454089707" duration="1215000" />
+      <workItem from="1542013118475" duration="250000" />
+      <workItem from="1546918835075" duration="546000" />
+      <workItem from="1546929181648" duration="1885000" />
+      <workItem from="1546997684629" duration="1922000" />
+      <workItem from="1547015705403" duration="620000" />
+      <workItem from="1547516386640" duration="1157000" />
+      <workItem from="1547536351583" duration="1468000" />
+      <workItem from="1547602389587" duration="3049000" />
+      <workItem from="1547689085116" duration="1276000" />
+      <workItem from="1547775459078" duration="614000" />
+      <workItem from="1547862036736" duration="705000" />
+      <workItem from="1548034545392" duration="1272000" />
+      <workItem from="1548121354756" duration="1194000" />
+      <workItem from="1550038669415" duration="1972000" />
+      <workItem from="1551058180659" duration="1806000" />
+      <workItem from="1553580026191" duration="1245000" />
+      <workItem from="1553612307985" duration="4000" />
+      <workItem from="1553649413296" duration="1646000" />
+      <workItem from="1553674781186" duration="154000" />
+      <workItem from="1553742407292" duration="631000" />
+      <workItem from="1553753204356" duration="619000" />
+      <workItem from="1553759823866" duration="229000" />
+      <workItem from="1553823832418" duration="735000" />
+      <workItem from="1553850539171" duration="698000" />
+      <workItem from="1553851308446" duration="1046000" />
     </task>
+    <task id="LOCAL-00001" summary="修改">
+      <created>1542013261141</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542013261141</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83892000" />
+    <option name="totallyTimeSpent" value="110717000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -268,11 +792,11 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2650158" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.26238146" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" weight="0.32996634" />
       <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.66558087" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.46145493" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Run" order="5" />
@@ -285,6 +809,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.26238146" />
+      <window_info id="Structure" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" weight="0.32996634" />
+      <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.46145493" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info anchor="bottom" id="Run" order="5" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="9" weight="0.32956687" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -292,278 +835,184 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/form4.html" />
-    <entry file="file://$USER_HOME$/Downloads/form2.html" />
-    <entry file="file://$USER_HOME$/Downloads/form1.html" />
-    <entry file="file://$PROJECT_DIR$/test.html" />
-    <entry file="file://$PROJECT_DIR$/demos/style.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/selectors.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/selector_target.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/selector_pseudo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="60" column="31" lean-forward="true" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/table01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/17.md" />
-    <entry file="file://$PROJECT_DIR$/js/nodeppt.control.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-988">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/img.screenfull.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/highlight/styles/zenburn.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="2" column="7" selection-start-line="2" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03.md" />
-    <entry file="file://$PROJECT_DIR$/19.md" />
-    <entry file="file://$PROJECT_DIR$/website2/js/jquery.min.js">
+    <entry file="file://$PROJECT_DIR$/demos/audio.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/website2/css/normalize.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret column="611" lean-forward="true" selection-start-column="611" selection-end-column="611" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/css/theme.blue.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/website2/img/android-1869510_1920.jpg">
+    <entry file="file://$PROJECT_DIR$/css/theme.dark.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/theme.green.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/theme.moon.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/01/content.png" />
+    <entry file="file://$PROJECT_DIR$/img/01/FE.jpg" />
+    <entry file="file://$PROJECT_DIR$/img/01/jl.jpg" />
+    <entry file="file://$PROJECT_DIR$/img/01/salary.png" />
+    <entry file="file://$PROJECT_DIR$/img/02/HTML5_sticker.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/website2/font/css/font-awesome.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="3" column="310" lean-forward="true" selection-start-line="3" selection-start-column="310" selection-end-line="3" selection-end-column="310" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/img/03/html5-infographics.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/扩展知识--移动端开发/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="73" column="26" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/img/03/html5Feature.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/扩展知识--移动端开发/JS touch 事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3192" />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/img/03/html5Timeline.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/扩展知识--移动端开发/bootstrap常用的写法.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2964">
-          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/img/03/html5timeline-small.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/扩展知识--移动端开发/CSS3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4142">
-          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/img/03/Periodic-Table-of-HTML-Elements.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/扩展知识--移动端开发/viewport缩放的实例.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1954">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/img/03/Periodic-Table-of-HTML-Elements-large.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/扩展知识--移动端开发/自适应页面.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="104" column="16" lean-forward="true" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/img/03/tag.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/扩展知识--移动端开发/移动端的常用写法.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="78" column="14" lean-forward="true" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/img/03/yy.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/扩展知识--移动端开发/移动端和PC端的主要区别.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3436" />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/img/03/yy2.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/扩展知识--移动端开发/PC移动端/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/img/06/canvas.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/扩展知识--移动端开发/淘宝的移动端方案/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/img/08/q.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/扩展知识--移动端开发/移动端/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/img/09/snippet.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/扩展知识--移动端开发/使用rem的基本方案.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="64" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/img/09/url.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/06.md" />
-    <entry file="file://$PROJECT_DIR$/18.md" />
-    <entry file="file://$PROJECT_DIR$/demos/audio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/img/10/hello.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/扩展知识--CSS3动画新特性/viewport缩放的实例.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/img/10/pic.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/08.md" />
-    <entry file="file://$PROJECT_DIR$/js/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1910">
-          <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/img/12/table.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/13/bg.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/13/css3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/13/CSS3_taxonomy_and_status-v2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/13/error.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/17/box-model.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/28/form.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/28/formTag.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/style/01.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/zoom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-182">
-          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-        </state>
+        <state relative-caret-position="-9279" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website1/css/normalize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/扩展知识--CSS3动画新特性/01 columns的用法.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="34" column="158" selection-start-line="34" selection-start-column="158" selection-end-line="34" selection-end-column="158" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/扩展知识--移动端开发/PC固定端/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
-          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website2/js/js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="329" column="17" selection-start-line="329" selection-start-column="17" selection-end-line="329" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/扩展知识--bootstrap企业站完整特效版/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2052">
-          <caret line="140" column="6" lean-forward="true" selection-start-line="140" selection-start-column="6" selection-end-line="140" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/website1/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="70" column="26" lean-forward="true" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website1/css/css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6612">
-          <caret line="172" column="20" lean-forward="true" selection-start-line="172" selection-start-column="20" selection-end-line="172" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website2/css/page.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="90" column="9" lean-forward="true" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="826">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+    <entry file="file://$PROJECT_DIR$/07.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-210">
+            <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/02.md">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="245">
+            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/05.md">
+    <entry file="file://$PROJECT_DIR$/js/demo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1995" />
+        <state relative-caret-position="-1680" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/02/JavaScript Introduction.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/02/javascript-logo-png.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/02/kernel.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/02/web-browsers.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/02/service_web_standards.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/03/canvasSupport.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/03/dragAndDropSupport.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/02/browserData.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/02/css3-web-design-examples.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/02/html.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/02/html5_css_javascript.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/02/HTML5_Logo_512.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="218">
+            <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
       </provider>
     </entry>
   </component>
