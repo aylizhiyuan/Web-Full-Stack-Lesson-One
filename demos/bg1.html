@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            width:1200px;
+            height:200px;
+            border:1px solid #ccc;
+            margin:0 auto;
+            background-image:url("/demos/img/bg1.jpg");
+            /*容器太小了，图片太大了*/
+            /*background-size来调整图片的大小*/
+            background-size:100px 100px;
+            /*把图片变成跟容器一样大小*/
+            /*这种方式是很粗暴的将图片设置成容器大小，不考虑等比例*/
+            /*background-size:100% 100%;*/
+            /*保证背景图片等比例缩放到完全覆盖容器*/
+            /*background-size:cover;*/
+            /*等比例的缩放到高度和宽度跟容器高度和宽度一样（要么是高度，要么是宽度），保证背景图片始终包含在容器里*/
+            /*保证这张图片可以完全展示出来*/
+            background-size:contain;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+</div>
+</body>
+</html>
