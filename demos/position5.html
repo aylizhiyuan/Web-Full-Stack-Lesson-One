@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin:0;
+            border:1px solid #ccc;
+        }
+        .container {
+            width:400px;
+            height:300px;
+            border:1px solid red;
+            margin:0 auto;
+            position:relative;
+            /*如果你需要针对图片的容器(父元素)进行定位的话*/
+            /*在它的父元素添加一个定位属性*/
+        }
+        .container img {
+            position:absolute;/*绝对定位*/
+            left:10px;
+            top:10px;
+            /*绝对定位的参考点如果在没有定位属性的祖先元素的时候，默认是body*/
+            /*绝对定位的元素脱离文档流，父元素不会计算定位元素的大小*/
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="img/liwu.png">
+    <p>我是一个段落...</p>
+</div>
+</body>
+</html>

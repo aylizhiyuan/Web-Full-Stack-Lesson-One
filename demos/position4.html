@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img {
+            position:relative;/*让该元素相对定位*/
+            left:50px;
+            top:100px;
+            /*相对定位是针对元素自身的位置进行定位的*/
+            /*相对定位依然是在文档流当中的，不会脱离文档流*/
+            /*相对定位的元素依然会占据它原来的空间*/
+            z-index:-2;
+            /*相对定位的元素可能会跟其他的元素产生重叠，这时候*/
+            /*可以使用z-index调整层级*/
+        }
+    </style>
+</head>
+<body>
+<img src="img/liwu.png">
+<p>这是一个段落段落....</p>
+</body>
+</html>
