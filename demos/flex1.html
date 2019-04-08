@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <title>flex布局的基本使用</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            /*常用的文字字体的大小*/
+            font-size:14px;
+            margin:0;
+            padding:0;
+            border:0;
+        }
+        /*全局的大的包裹框设置height为100% */
+        #wrapper {
+            position:relative;
+            z-index:2;
+            height:100%;
+        }
+        #wrapper div {
+            width:7.2rem;
+            height:2rem;
+            border:1px solid #ccc;
+            margin:0 auto;
+            /*设置某个盒子的的属性为flex,那么里面的元素的排列方式将变成弹性盒子布局*/
+            display:flex;
+        }
+        #wrapper div section {
+            width:0.5rem;
+            height:0.5rem;
+            border:2px solid green;
+            text-align:center;
+            line-height:0.5rem;
+            color:red;
+        }
+        #flex1 {
+            /*改变内部所有的子元素的排列方法，横向或者竖向*/
+            /*flex-direction:row;*/
+            /*flex-direction: row-reverse;*/
+            /*flex-direction: column;*/
+            /*flex-direction: column-reverse;*/
+        }
+        #flex2 {
+            /*当子元素的内容超过了盒子的宽度，子元素会变小，反正就是不会换行*/
+            flex-wrap: wrap;
+
+        }
+        #flex3 {
+            /*这个属性是所有的盒子在横轴上面的对齐方式*/
+            /* justify-content: flex-start;
+             justify-content: flex-end;*/
+            /*justify-content: center;*/
+            /*justify-content: space-around;*/
+            justify-content: space-between;
+        }
+        #flex4 {
+            /*所有的盒子在纵轴的对齐方式*/
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+            align-items: baseline ;
+            align-items: stretch;
+        }
+        #flex5 {
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+            align-items: baseline ;
+            align-items: stretch;
+        }
+        #flex5 section:nth-child(1) {
+            height:0.5rem;
+            /*选择比例*/
+            /*flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。*/
+            /*如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。*/
+            flex-grow: 0;
+            /*flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。*/
+            /*如果所有项目的flex-shrink属性都为1，当空间不足时，都将等比例缩小。如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时，前者不缩小。*/
+            flex-shrink: 1;
+            /*flex-basis这个属性和width和height属性相同，用来指定flex项目的大小。*/
+            flex-basis:auto;
+        }
+        #flex5 section:nth-child(2) {
+            height:1rem;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis:auto;
+        }
+        #flex5 section:nth-child(3) {
+            height:1.5rem;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis:auto;
+        }
+        #flex5 section:nth-child(4) {
+            height:2rem;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis:auto;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="flex1">
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+        <section>4</section>
+    </div>
+    <div id="flex2">
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+        <section>4</section>
+        <section>5</section>
+        <section>6</section>
+        <section>7</section>
+        <section>8</section>
+        <section>9</section>
+        <section>10</section>
+        <section>11</section>
+        <section>12</section>
+        <section>13</section>
+        <section>14</section>
+        <section>15</section>
+        <section>16</section>
+        <section>17</section>
+    </div>
+    <div id="flex3">
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+        <section>4</section>
+    </div>
+    <div id="flex4">
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+        <section>4</section>
+    </div>
+    <div id="flex5">
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+        <section>4</section>
+        <section>5</section>
+        <section>6</section>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $(function(){
+        function fullWidth(){
+            if($('body').width() >= 720){
+                $('html').css('font-size',100 + 'px');
+                return ;
+            }
+            var scale = $('body').width() / 720;
+            $('html').css('font-size', 100 * scale + 'px');
+        };
+        fullWidth();
+        $(window).resize(function(){
+            fullWidth();
+        });
+    });
+
+</script>

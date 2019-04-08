@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8" />
+    <title>white-space</title>
+    <style>
+        .test p{width:200px;border:1px solid #000;}
+        .normal p{word-wrap:normal;}
+        .pre p{white-space:pre;}
+        .pre-wrap p{white-space:pre-wrap;}
+        .pre-line p{white-space:pre-line;}
+        .nowrap p{white-space:nowrap;}
+    </style>
+</head>
+<body>
+<ul class="test">
+    <li class="normal">
+        <strong>normal：</strong>
+        <p>轻轻地我走了
+            正如我轻轻地来</p>
+    </li>
+    <li class="pre">
+        <strong>pre：</strong>
+        <p>轻轻地我走了（这里接很多测试文字）
+            正如我轻轻地来</p>
+    </li>
+    <li class="pre-wrap">
+        <strong>pre-wrap：</strong>
+        <p>轻轻地    我走了（这里接很多测试文字）
+            正如我轻轻地来</p>
+    </li>
+    <li class="pre-line">
+        <strong>pre-line</strong>
+        <p>轻轻地    我走了（这里接很多测试文字）
+            正如我轻轻地来</p>
+    </li>
+    <li class="nowrap">
+        <strong>nowrap：</strong>
+        <p>轻轻地我走了
+            正如我轻轻地来</p>
+    </li>
+</ul>
+</body>
+</html>

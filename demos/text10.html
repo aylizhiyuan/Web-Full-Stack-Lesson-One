@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8" />
+    <title>text-indent</title>
+    <style>
+        .test p { border: 1px solid #000; }
+        .test span,
+        .test ins { text-indent: 30px; }
+        .inline-block span { display: inline-block; }
+        .block span { display: block; }
+        .other ins { display: inline-block; background: #eee; }
+    </style>
+</head>
+<body>
+<ul class="test">
+    <li class="inline">
+        <strong>内联元素span</strong>
+        <p><span>看看我的左边有没有30px的缩进</span></p>
+    </li>
+    <li class="inline-block">
+        <strong>被设置为内联块级元素的span</strong>
+        <p><span>看看我的左边有没有30px的缩进</span></p>
+    </li>
+    <li class="block">
+        <strong>被设置为块级元素的span</strong>
+        <p><span>看看我的左边有没有30px的缩进</span></p>
+    </li>
+    <li class="other">
+        <strong>包含有内联块的块级元素</strong>
+        <p><span>看看我的左边有没有30px的缩进</span><ins>我是一个被插入的内联块元素</ins></p>
+    </li>
+</ul>
+</body>
+</html>

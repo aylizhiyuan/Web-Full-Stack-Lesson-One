@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p {
+            width:200px;
+            height:200px;
+            border:1px solid #ccc;
+            /*将块级元素变成内联元素*/
+            display:inline;
+            /*将块级元素编程内联元素，并且保留块级元素有的大小*/
+            display:inline-block;
+        }
+        span {
+            /*将一个内联元素变成一个块级元素*/
+            display:block;
+        }
+        b {
+            /*将元素隐藏*/
+            /*不占据网页空间*/
+            display:none;
+            /*也可以让元素隐藏*/
+            /*是占据网页空间的*/
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+<!--块级元素占据一行-->
+<p>
+    这是一个段落....
+</p>
+<!--内联元素不占一行-->
+<a href="#">这是一个链接</a>
+<span>我是一个内联元素</span>
+<b>我是一个内联元素</b>
+</body>
+</html>
