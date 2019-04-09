@@ -1,16 +1,12 @@
-# Web-Full-Stack-Lesson-One
-### web全栈第一课--HTML+CSS
+# web全栈第一课--HTML+CSS
 
+### **打开方式：**
 
-> 此课程会不断的更新...有需要的同学可以免费进行下载....
+ 1. 全局安装nodeppt npm install -g nodeppt@1.4.5
 
-**打开步骤：**
+ 2. 进入项目目录后,输入nodppt start 启动项目
 
-> 1.全局安装nodeppt npm install -g nodeppt@1.4.5
-
-> 2.进入项目目录后,输入nodppt start 启动项目
-
-**项目目录**
+### **课程目录**
 
 1. web概述
 2. html概述
