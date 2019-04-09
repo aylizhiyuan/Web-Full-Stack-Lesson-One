@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D位移的Demo</title>
+    <style>
+        #experiment {
+            -webkit-perspective: 800;
+            -webkit-perspective-origin: 50% 50% 0;
+            -webkit-transform-style: -webkit-preserve-3d;
+        }
+        #block {
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            margin: 100px auto;
+            transition: background-color 1s;
+            -webkit-transition: background-color 1s;
+        }
+        #block:hover {
+            background-color: purple;
+        }
+        #op {
+            text-align: center;
+        }
+        #op input {
+            width: 800px;
+        }
+    </style>
+    <script>
+        function Scaleall() {
+            var x = document.getElementById("scaleX").value;
+            var y = document.getElementById("scaleY").value;
+            var z = document.getElementById("scaleZ").value;
+            document.getElementById("block").style.webkitTransform = "scale3d(" + x + "," + y + "," + z + ")";
+
+            document.getElementById("scaleX-span").innerText = x;
+            document.getElementById("scaleY-span").innerText = y;
+            document.getElementById("scaleZ-span").innerText = z;
+        }
+    </script>
+</head>
+<body>
+<div id="experiment">
+    <div id="block">
+
+    </div>
+</div>
+<div id="op">
+    <p>scale x: <span id="scaleX-span">0</span>倍</p>
+    <input type="range" min="1" max="10" id="scaleX" value="2" class="range-control" onmousemove="Scaleall()"/><br/>
+    <p>scale y: <span id="scaleY-span">0</span>倍</p>
+    <input type="range" min="1" max="10" id="scaleY" value="2" class="range-control" onmousemove="Scaleall()"/><br/>
+    <p>scale z: <span id="scaleZ-span">0</span>倍</p>
+    <input type="range" min="1" max="10" id="scaleZ" value="2" class="range-control" onmousemove="Scaleall()"/><br/>
+</div>
+</body>
+</html>

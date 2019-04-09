@@ -1,0 +1,141 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>3D书页</title>
+    <style>
+        body{
+            background-color: black;
+            overflow: hidden;
+            -moz-user-select: none;
+            color: white;
+        }
+        main{
+            margin: 250px auto 0 auto;
+            width: 300px;
+            height: 400px;
+            position: relative;
+            perspective: 900px;
+            /*perspective-origin 属性定义 3D 元素所基于的 X 轴和 Y 轴。该属性允许您改变 3D 元素的底部位置。
+            当为元素定义 perspective-origin 属性时，其子元素会获得透视效果，而不是元素本身。
+            注释：该属性必须与 perspective 属性一同使用，而且只影响 3D 转换元素。
+            perspective-origin属性规定了镜头在平面上的位置。默认是放在元素的中心。
+            默认是50% 50%
+            语法：perspective-origin: x-axis y-axis;
+            x可取值:left,right,center,%,长度单位值 如：px
+            y可取值:top,center,bottom,%,长度单位值 如：px*/
+            perspective-origin: 30% 80%;
+        }
+        section{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /*设置旋转元素的基点位置,默认为中心点
+            语法:transform-origin: x-axis y-axis z-axis;
+            x可取值:left,right,center,%,长度单位值 如：px
+            y可取值:top,center,bottom,%,长度单位值 如：px
+            z只能取值：长度单位值 如：px*/
+            transform-origin: 0 0 0;
+            opacity: 0.8;
+            transition: transform 2s;
+        }
+        section:nth-child(1){
+            background-color: yellow;
+            transform: rotateY(-2deg);
+        }
+        section:nth-child(2){
+            background-color: red;
+            transform: rotateY(-17deg);
+        }
+        section:nth-child(3){
+            background-color: blue;
+            transform: rotateY(-32deg);
+        }
+        section:nth-child(4){
+            background-color: green;
+            transform: rotateY(-42deg);
+            color: white;
+        }
+        section:nth-child(4) h2{
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 10ox;
+            /*font-weight 属性设置文本的粗细，可跟bold粗体、bolder更粗的、lighter更细的、normal正常的*/
+            /*也可取值100~900 400相当于normal、700相当于bold*/
+            font-weight: normal;
+        }
+        section:nth-child(4) p{
+            /*em是相对单位，1em=16px 不过em的取值依赖于父元素的值*/
+            text-indent: 2em;
+            margin: 10px 30px;
+            font-size: 13px;
+        }
+        section:nth-child(4) span{
+            position: absolute;
+            right: 30px;
+            bottom: 40px;
+            font-size: 13px;
+        }
+        section i{
+            position: absolute;
+            right: 13px;
+            bottom: 10px;
+            font-size: 11px;
+            color: #ccc;
+        }
+        section:nth-child(5){
+            background-color: purple;
+            transform: rotateY(-57deg);
+            color: white;
+            opacity: 0.95;
+        }
+        section:nth-child(5) h1{
+            position: absolute;
+            top: 30px;
+            left: 25px;
+            font-size: 32px;
+            font-weight: normal;
+        }
+        section:nth-child(5) span{
+            position: absolute;
+            bottom: 80px;
+            left: 125px;
+            font-size: 18px;
+        }
+        section:nth-child(5):active{
+            transform: rotateY(-120deg);
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <i>4</i>
+    </section>
+    <section>
+        <i>3</i>
+    </section>
+    <section>
+        <i>2</i>
+    </section>
+    <section>
+        <h2>引言</h2>
+        <p>矩阵在图形变换中有广泛的应用，也是图形变换的数学基础。缩放、旋转、倾斜变换只需要使用 2 x 2 矩阵，
+            如果把平移也加入进来，将得到 2 x 3 矩阵，如果进一步扩充，可以使用一个 3 x 3 的矩阵表示所有的基本2D变换。
+            多个变换矩阵相乘将得到组合变换的效果。3D变换也可以很方便地用 4 x 4 的矩阵表示。</p>
+        <p>
+            在图形变换过程中，普通的几何图形只需要考虑顶点即可。旋转变换时需要使用三角函数。
+            为了在平面显示器中看到3D效果，还需要使用透视理论。</p>
+        <span>
+                    李志远 编著
+                </span>
+        <i>1</i>
+    </section>
+    <section>
+        <h1>CSS图形变换入门</h1>
+        <span>李志远</span>
+    </section>
+</main>
+</body>
+</html>

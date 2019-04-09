@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D旋转的Demo</title>
+    <style>
+        #experiment {
+
+        }
+        #block {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+            -webkit-transition: background-color 3s;
+        }
+        #block:hover {
+            background-color: purple;
+        }
+        #ep {
+            text-align: center;
+        }
+        #ep input {
+            width: 800px;
+        }
+    </style>
+    <script>
+        function rotate() {
+            var x = document.getElementById("rotateX").value;
+            var y = document.getElementById("rotateY").value;
+            document.getElementById("block").style.webkitTransform = "skew(" + x + "deg," + y + "deg)";
+            document.getElementById("degx-span").innerText = x;
+            document.getElementById("degy-span").innerText = y;
+        }
+    </script>
+</head>
+<body>
+<div id="experiment">
+    <div id="block"></div>
+</div>
+<div id="ep">
+    <p>skew x: <span id="degx-span">0</span>deg</p>
+    <input type="range" min="-360" max="360" id="rotateX" value="0" class="range-control" onmousemove="rotate()"/><br/>
+    <p>skew y: <span id="degy-span">0</span>deg</p>
+    <input type="range" min="-360" max="360" id="rotateY" value="0" class="range-control" onmousemove="rotate()"/><br/>
+</div>
+</body>
+</html>

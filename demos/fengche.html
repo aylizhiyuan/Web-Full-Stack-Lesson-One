@@ -1,0 +1,119 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>旋转的风车</title>
+    <style>
+        body{
+            /*设置body高度为100% 如果不设置的话，高度为内容的高度*/
+            height: 100%;
+            /*开启弹性布局*/
+            display: flex;
+            /*设置弹性布局中子元素的'水平对齐'方式为居中*/
+            justify-content: center;
+            /*设置弹性布局中子元素的'垂直方向对齐'为底部对齐*/
+            align-items: flex-end;
+            /*设置元素外边距为0,因为body元素默认自带8px外边距*/
+            margin: 0;
+            /*剪切元素溢出内容，防止出现滚动条*/
+            overflow: hidden;
+        }
+        main{
+            /*设置相对定位，为子元素的绝对定位设置参考
+            注：绝对定位的参考位置为有定位属性的父级元素，
+            若父级元素没有则会逐级往上查找，直到找到body，
+            body不管是否定位都行。
+            元素设置为绝对定位以后，不管原来的标签类型为行内元素还是块级元素，
+            最后都会被转换为行内块元素
+            行内块元素：还是行内元素的布局方式，但是可以设置宽和高*/
+            position:relative;
+            /*设置宽度为1300px 原图的一半是1300 设置等比例缩放*/
+            width:1300px;
+            /*设置高度为500px*/
+            height:500px;
+            /*引入背景图片*/
+            background-image:url(/demos/img/caodi.png);
+            /*设置背景图像缩小或放大成将适合背景定位区域的最大大小。*/
+            background-size:contain;
+            /*设置最小宽度为1300px*/
+            min-width: 1300px;
+        }
+        div:nth-child(1){
+            /*设置绝对定位*/
+            position:absolute;
+            /*元素绝对定位后距离参考元素左侧的距离*/
+            left:265px;
+            /*元素距离上边的距离*/
+            top:40px;
+            /*元素宽度*/
+            width:350px;
+            /*元素高度*/
+            height:350px;
+            /*元素背景图片*/
+            background-image:url(/demos/img/fengche.png);
+            /*设置背景图像缩小或放大成将适合背景定位区域的最大大小。*/
+            background-size:contain;
+            /*动画名称，动画时间，动画旋转速度，动画播放次数  这是缩写，
+            详细的应该是：
+            animation-name:rotate;
+            animation-duration: 3s;
+            设置动画匀速旋转
+            animation-timing-function: linear;
+            设置动画的播放次数为无限次
+            animation-iteration-count: infinite;
+            */
+            animation: rotate 3s infinite linear;
+        }
+        div:nth-child(2){
+            position:absolute;
+            left:591px;
+            top:280px;
+            width:150px;
+            height:150px;
+            background-image:url(/demos/img/fengche.png);
+            background-size:contain;
+            animation: rotate 3s infinite linear;
+        }
+        div:nth-child(3){
+            position:absolute;
+            left:729px;
+            top:180px;
+            width:250px;
+            height:250px;
+            background-image:url(/demos/img/fengche.png);
+            background-size:contain;
+            animation: rotate 3s infinite linear;
+        }
+
+        div:hover{
+            /*当鼠标经过的时候，更改元素的动画时间*/
+            animation-duration: 1.5s;
+        }
+        div:active{
+            /*当鼠标点击的时候，去除动画效果*/
+            animation: none;
+        }
+        /*使用@keyframes规则，你可以创建动画。
+              创建动画是通过逐步改变从一个CSS样式设定到另一个。
+              指定的变化时发生时使用％，或关键字"from"和"to"，
+              这是和0％到100％相同。*/
+        @keyframes rotate {
+            /*设置动画从0%的状态到100%的状态旋转360度*/
+            0%{
+                transform: rotate(0);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<!--设置main标签插入草地背景-->
+<main>
+    <!--设置三个div标签作为风扇-->
+    <div></div>
+    <div></div>
+    <div></div>
+</main>
+</body>
+</html>

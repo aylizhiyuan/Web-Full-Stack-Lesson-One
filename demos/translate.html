@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D位移的Demo</title>
+    <style>
+        #experiment {
+            -webkit-perspective: 800;
+            -webkit-perspective-origin: 50% 50%;
+            -webkit-transform-style: -webkit-preserve-3d;
+        }
+        #block {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+
+            transition: background-color 1s;
+            -webkit-transition: background-color 1s;
+        }
+        #block:hover {
+            background-color: purple;
+        }
+        #op {
+            text-align: center;
+        }
+        #op input {
+            width: 800px;
+        }
+    </style>
+    <script>
+        function translateall() {
+            var x = document.getElementById("translateX").value;
+            var y = document.getElementById("translateY").value;
+            var z = document.getElementById("translateZ").value;
+            document.getElementById("block").style.webkitTransform = "translate3d(" + x + "px," + y + "px," + z + "px)";
+
+            document.getElementById("translatex-span").innerText = x;
+            document.getElementById("translatey-span").innerText = y;
+            document.getElementById("translatez-span").innerText = z;
+        }
+    </script>
+</head>
+<body>
+<div id="experiment">
+    <div id="block">
+
+    </div>
+</div>
+<div id="op">
+    <p>translate x: <span id="translatex-span">0</span>px</p>
+    <input type="range" min="-360" max="360" id="translateX" value="0" class="range-control" onmousemove="translateall()"/><br/>
+    <p>translate y: <span id="translatey-span">0</span>px</p>
+    <input type="range" min="-360" max="360" id="translateY" value="0" class="range-control" onmousemove="translateall()"/><br/>
+    <p>translate z: <span id="translatez-span">0</span>px</p>
+    <input type="range" min="-360" max="360" id="translateZ" value="0" class="range-control" onmousemove="translateall()"/><br/>
+</div>
+</body>
+</html>
