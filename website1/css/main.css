@@ -1,0 +1,238 @@
+/*一开始的话，需要将浏览器的默认样式给去掉*/
+/*1.我们是不需要这些默认样式的*/
+/*1.会解决不同浏览器之间的样式上的差异*/
+
+/*如果说，你是个菜鸟，我不知道如何清除那么多浏览器默认样式*/
+/*统一清除的话，建议你使用normalize.css*/
+
+* {
+    box-sizing:border-box;/*在保证宽度和高度不变的情况下，增加内边距和边框*/
+}
+ul {
+    margin:0;/*列表的外边距去掉*/
+    padding:0;/*列表的内边距去掉*/
+    list-style:none;/*将列表前的小圆点去掉*/
+}
+a {
+    text-decoration: none;/*链接的下划线去掉*/
+    color:#fff;/*把所有的链接的颜色改为白色*/
+}
+/*清除浮动的类*/
+.clearfix::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+/*整体设置*/
+body {
+    margin:0;
+    color:#fff;
+    min-height:1200px;
+    /*第一个参数是背景图片的地址，第二个参数是position，第三个是attachment*/
+    background:url("../images/bg.jpg") center top fixed;
+}
+.container {
+    max-width:1200px;
+    margin:0 auto;/*让布局居中*/
+}
+
+/*头部的设置*/
+header {
+    margin:50px 0;
+}
+header img {
+    width:80px;
+    height:auto;/*图片的高度就会随着宽度自适应了*/
+}
+header img:hover {
+    animation:run 1s;
+}
+header nav{
+    float:right;
+}
+header nav ul li {
+    float:left;
+}
+header nav ul li a {
+    display:block;
+    padding:20px;
+    margin:20px 30px;
+    /*为了防止边框的抖动，提前给它加一个透明的边框*/
+    border:1px solid transparent;
+}
+header nav ul li a:hover {
+    border:1px solid #fff;
+    color:#000;
+}
+header h1 {
+    margin:50px 0;
+}
+/*主题部分 seciton--我的兴趣*/
+main section {
+    margin-bottom:50px;
+}
+main .like ul li {
+    float:left;
+}
+main .like ul li {
+    width:160px;
+    height:48px;
+    background:rgba(100,100,200,.6);
+    margin:10px 20px 0 0;
+    text-align:center;/*文字水平居中*/
+    line-height:48px;/*设置跟高度一样的行高，可以让文字垂直居中*/
+    border-radius:5px;
+}
+main .like ul li:hover {
+    background:rgba(100,100,200,.8);
+}
+/*当你设置a为块级元素的时候，它的大小跟li一样大*/
+main .like ul li a {
+    display:block;
+}
+/*项目示例*/
+main .project-item {
+    /*将我们的布局设置为弹性布局*/
+    display:flex;
+    flex-wrap:wrap;/*换行*/
+    justify-content: space-between;
+}
+main .project-item figure {
+    width:30%;
+    margin:0;
+    margin-bottom:20px;
+    position:relative;
+}
+main .project-item figure img {
+    max-width:100%;
+    height:auto;
+    /*图片的灰度设置为0.5*/
+    -webkit-filter:grayscale(.5);
+}
+main .project-item figure figcaption {
+    position:absolute;
+    /*让一个未知大小的元素垂直居中*/
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    display:none;
+}
+main .project-item figure:hover figcaption{
+    display:block;
+}
+main .project-item figure:hover img {
+    -webkit-filter: grayscale(0);
+}
+/*联系我们*/
+main .contact dl dt {
+    display:inline-block;
+    padding:5px 20px;
+    background:#fff;
+    color:#000;
+    text-align:center;
+}
+main .contact dl dd {
+    display:inline-block;
+    padding:5px 20px;
+    margin:0;
+    background: #000;
+    color:#fff;
+    text-align:center;
+}
+main .contact form {
+    width:100%;
+    /*里面的元素都是行内元素，所以，我要用inline-flex*/
+    display:inline-flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+main .contact input[name=name] {
+    width:30%;
+    height:40px;
+    padding:10px;
+    outline:none;
+}
+main .contact input[name=email] {
+    width:30%;
+    height:40px;
+    padding:10px;
+    outline:none;
+}
+main .contact select[name=fav] {
+    width:30%;
+    height:40px;
+    padding:10px;
+}
+main .contact textarea[name=message] {
+    width:45%;
+    height:40px;
+    padding:10px;
+    outline:none;
+    margin-top:20px;
+}
+main .contact input[name=submit] {
+    width:45%;
+    height:40px;
+    margin-top:20px;
+}
+
+/*
+ 版权部分
+ * */
+#goTop{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size:14px;
+}
+
+@keyframes run{
+    0%{
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(-30deg);
+    }
+    20%{
+        transform: rotate(30deg);
+    }
+    30%{
+        transform: rotate(-20deg);
+    }
+    40%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(-15deg);
+    }
+    60%{
+        transform: rotate(15deg);
+    }
+    70%{
+        transform: rotate(-10deg);
+    }
+    80%{
+        transform: rotate(5deg);
+    }
+    90%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+
+
+
