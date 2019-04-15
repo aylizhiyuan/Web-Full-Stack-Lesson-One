@@ -1,0 +1,269 @@
+* {
+    box-sizing:border-box;
+}
+body {
+    color:#000;
+}
+ul {
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+a {
+    text-decoration: none;
+}
+figure {
+    margin:0;
+}
+.clearfix::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+.container {
+    max-width:1200px;
+    margin:0 auto;
+}
+/*******************头部的设置**************/
+header {
+    position:fixed;/*窗口定位*/
+    width:100%;
+    height:60px;
+    background:rgba(0,0,0,.7);
+    z-index:10;
+}
+header .logo {
+    float:left;
+}
+header .logo img {
+    /*针对图片和文字有作用，行内元素的垂直对齐方式*/
+    vertical-align: middle;
+}
+header .logo span {
+    font-family:'Dancing Script', cursive;
+    font-size:3em;/*3em = 48px*/
+    color:#fff;
+    vertical-align: middle;
+}
+header nav{
+    float:right;
+}
+header nav ul li {
+    float:left;
+    line-height:60px;
+}
+header nav ul li a {
+    color:#fff;
+    margin:0 30px;
+    transition:all .5s;
+}
+header nav ul li a:hover {
+    color:#339BEB;
+}
+/*banner*/
+.banner {
+    background:url("../image/banner.jpg") no-repeat center top;
+    position:relative;
+    color:#333;
+}
+.banner .caption {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+.banner .caption h1 em {
+    font-style:normal;
+    color:#339BEB;
+}
+.banner .caption p {
+    text-align:left;
+    line-height:1.8;
+}
+.banner .caption p em {
+    font-style:normal;
+    background:rgba(0,0,0,.2);
+    color:#fff;
+}
+/*关于我们*/
+section {
+    margin-bottom:100px;
+}
+.about h2{
+    text-align:center;
+}
+.about h2+p {
+    text-align:center;
+    margin-bottom:100px;
+}
+.about-img {
+    width:50%;
+    float:left;
+}
+.about-img img {
+    max-width:100%;
+    height:auto;
+}
+.about-text {
+    width:50%;
+    float:left;
+    line-height:2;
+    padding-left:20px;
+}
+.about-text p:first-of-type {
+    margin-top:0;
+}
+.about-text ul li {
+    /*用来设置计数的变量以及初始值*/
+    counter-increment: num 1;
+}
+.about-text ul li::before {
+    /*它是一个计数的属性*/
+    content:counter(num);
+    width:20px;
+    height:20px;
+    display:inline-block;
+    border:1px dashed #000;
+    border-radius: 50%;
+    text-align:center;
+    line-height:1.2;
+    margin-right:10px;
+    transition:all .5s;
+}
+.about-text ul li:hover::before{
+    transform:translateX(10px);
+}
+/*服务*/
+.service {
+    background:url("../image/desktop.jpg") center center no-repeat;
+    min-height:600px;
+    background-size:cover;
+    line-height:2;
+}
+.service h2 {
+    text-align:center;
+    padding-top:50px;
+}
+.service h2 + p {
+    text-align:center;
+}
+.service ul li{
+    width:48%;
+    float:left;
+    margin-right:4%;
+    text-align:right;
+}
+.service ul li:nth-child(2n+1) i {
+    float:right;
+    position:relative;
+    top:12px;
+    left:5px;
+}
+.service ul li:nth-child(2n){
+    margin-right:0;
+    text-align:left;
+}
+.service ul li h3 {
+    display:inline-block;
+    margin:0;
+}
+/*成功案例*/
+.project h2 {
+    text-align:center;
+}
+.project h2+p {
+    text-align: center;
+}
+.project-img {
+    display:flex;
+    flex-wrap:wrap;
+}
+.project-img figure {
+    width:24%;
+    position:relative;
+    margin:15px calc(4%/3) 0 0;
+    cursor:pointer;
+    overflow:hidden;
+}
+.project-img figure:nth-child(4n){
+    margin-right:0;
+}
+.project-img figure img {
+    max-width:100%;
+    height:auto;
+    transition:all .5s;
+}
+.project-img figure figcaption {
+    width:100%;
+    height:30px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    display:block;
+    background:rgba(255,255,255,.8);
+    text-align:center;
+    line-height:30px;
+}
+.project-img figure:hover img {
+    transform: scale(1.2) rotate(3deg);
+}
+/*联系我们*/
+.contact {
+    background:url("../image/android-1869510_1920.jpg") top center no-repeat;
+    background-size:cover;
+    min-height:500px;
+    color:#fff;
+}
+.contact h2 {
+    text-align:center;
+    padding-top:50px;
+}
+.contact h2+p {
+    text-align:center;
+    padding-bottom:50px;
+}
+.contact-address {
+    width:50%;
+    float:left;
+    line-height: 2;
+}
+.contact-address ul li i{
+    margin-right:10px;
+}
+.contact-form {
+    width:50%;
+    float:left;
+}
+.contact-form input {
+    width:100%;
+    outline:none;
+    border:none;
+    margin:10px 0;
+    padding:10px 16px;
+    border-radius: 5px;
+    background:rgba(255,255,255,.6);
+}
+textarea {
+    width:100%;
+    outline:none;
+    border:none;
+    margin:10px 0;
+    padding:10px 16px;
+    border-radius: 5px;
+    background:rgba(255,255,255,.6);
+}
+/*尾部*/
+section:last-child {
+    margin-bottom:0;
+}
+footer p {
+    text-align:center;
+}
+
+
+
+
+
+
+
