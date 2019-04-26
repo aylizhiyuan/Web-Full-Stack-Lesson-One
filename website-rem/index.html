@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html,body {
+            margin:0;
+            padding:0;
+            background: #f5f7f9;
+        }
+        ul,ol,dl {
+            padding:0;
+            margin:0;
+            list-style:none;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            margin:0;
+        }
+        p {
+            margin:0;
+        }
+        a {
+            text-decoration: none;
+            color:#000;
+        }
+        img {
+            max-width:100%;
+            height:auto;
+        }
+        .clearfix {
+            overflow:hidden;
+            zoom:1;
+        }
+        .container {
+            width:7.2rem;
+            margin:0 auto;
+        }
+        .ad {
+            height:1.13rem;
+        }
+        .nav {
+            height:0.9rem;
+            background:#fff;
+        }
+        .nav .nav-back {
+            width:1.5rem;
+            height:0.9rem;
+            line-height: 0.9rem;
+            float:left;
+            font-size:0.36rem;
+            padding-left:0.2rem;
+        }
+        .nav .nav-back::before {
+            content:"<"
+        }
+        .nav .nav-name {
+            width:5.7rem;
+            height:0.9rem;
+            text-align:center;
+            line-height:0.9rem;
+            float:left;
+            font-size:0.36rem;
+        }
+        .nav .nav-name h1 {
+            font-size:0.36rem;
+        }
+        .nav-content {
+            font-size:0.36rem;
+            height:0.9rem;
+            line-height:0.9rem;
+        }
+        .nav-content ul li {
+            float:left;
+            margin:0 0.2rem;
+            height:0.9rem;
+        }
+        .nav-content ul li.active {
+            border-bottom:3px solid red;
+        }
+        .nav-content ul li.active a {
+            color:red;
+        }
+        .article {
+            background:#fff;
+            padding:0.22rem;
+            margin-bottom:0.12rem;
+            font-size:0.36rem;
+        }
+        .article .article-item {
+            display:flex;
+            justify-content: space-between;
+            aling-items:flex-start;
+            padding:0.3rem;
+            border-bottom:1px solid #b4b4b4;
+        }
+        .article .article-item .art-content {
+            flex:2 2 auto;
+            padding-right:0.1rem;
+        }
+        .article .article-item .art-content h3 {
+            font-weight:normal;
+            max-height:0.9rem;
+            overflow:hidden;
+            line-height:0.45rem;
+            font-size:0.34rem;
+        }
+        .article .article-item .art-content p {
+            color:#b4b4b4;
+            line-height:0.34rem;
+            height:0.34rem;
+            margin-top:0.15rem;
+            overflow:hidden;
+        }
+        .article .article-item .art-content p strong {
+            font-weight: normal;
+            color:red;
+            margin-right:0.2rem;
+            font-size:0.30rem;
+        }
+        .article .article-item .art-content p span {
+            font-size:0.30rem;
+        }
+        .aritcle .article-item .art-pic {
+            width:2.34rem;
+            flex:0 0 auto;
+        }
+        .aritcle .article-item .art-pic img {
+            height:1.46rem;
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container ad">
+        <img src="https://yt-adp.ws.126.net/myzhang/1080170_anlj_20190424.jpg">
+    </div>
+    <div class="container nav clearfix">
+       <div class="nav-back">
+           <strong>网易</strong>
+       </div>
+        <div class="nav-name">
+            <h1>新闻频道</h1>
+        </div>
+    </div>
+    <div class="container nav-content">
+        <nav>
+            <ul class="clearfix">
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#">国内</a></li>
+                <li><a href="#">国际</a></li>
+                <li><a href="#">历史</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="container banner">
+        <img src="//cms-bucket.ws.126.net/2019/04/25/2caff9dad77749b1885c0a4685b88939.jpeg?imageView&thumbnail=750y370&quality=45&interlace=1&enlarge=1&type=webp">
+    </div>
+    <div class="container article">
+        <ul>
+            <li class="article-item">
+                <div class="art-content">
+                    <h3>普京与金正恩首度会晤握手后俩人都说了这句话</h3>
+                    <p>
+                        <strong>专题</strong>
+                        <span>3小时前</span>
+                    </p>
+                </div>
+                <div class="art-pic">
+                    <img src="//cms-bucket.ws.126.net/2019/04/25/a6983547735248498406c15ead411af6.png?imageView&thumbnail=234y146&quality=45&interlace=1&enlarge=1&type=webp">
+                </div>
+            </li>
+            <li class="article-item">
+                <div class="art-content">
+                    <h3>普京与金正恩首度会晤握手后俩人都说了这句话</h3>
+                    <p>
+                        <strong>专题</strong>
+                        <span>3小时前</span>
+                    </p>
+                </div>
+                <div class="art-pic">
+                    <img src="//cms-bucket.ws.126.net/2019/04/25/a6983547735248498406c15ead411af6.png?imageView&thumbnail=234y146&quality=45&interlace=1&enlarge=1&type=webp">
+                </div>
+            </li>
+            <li class="article-item">
+                <div class="art-content">
+                    <h3>普京与金正恩首度会晤握手后俩人都说了这句话</h3>
+                    <p>
+                        <strong>专题</strong>
+                        <span>3小时前</span>
+                    </p>
+                </div>
+                <div class="art-pic">
+                    <img src="//cms-bucket.ws.126.net/2019/04/25/a6983547735248498406c15ead411af6.png?imageView&thumbnail=234y146&quality=45&interlace=1&enlarge=1&type=webp">
+                </div>
+            </li>
+            <li class="article-item">
+                <div class="art-content">
+                    <h3>普京与金正恩首度会晤握手后俩人都说了这句话</h3>
+                    <p>
+                        <strong>专题</strong>
+                        <span>3小时前</span>
+                    </p>
+                </div>
+                <div class="art-pic">
+                    <img src="//cms-bucket.ws.126.net/2019/04/25/a6983547735248498406c15ead411af6.png?imageView&thumbnail=234y146&quality=45&interlace=1&enlarge=1&type=webp">
+                </div>
+            </li>
+            <li class="article-item">
+                <div class="art-content">
+                    <h3>普京与金正恩首度会晤握手后俩人都说了这句话</h3>
+                    <p>
+                        <strong>专题</strong>
+                        <span>3小时前</span>
+                    </p>
+                </div>
+                <div class="art-pic">
+                    <img src="//cms-bucket.ws.126.net/2019/04/25/a6983547735248498406c15ead411af6.png?imageView&thumbnail=234y146&quality=45&interlace=1&enlarge=1&type=webp">
+                </div>
+            </li>
+            <li class="article-item">
+                <div class="art-content">
+                    <h3>普京与金正恩首度会晤握手后俩人都说了这句话</h3>
+                    <p>
+                        <strong>专题</strong>
+                        <span>3小时前</span>
+                    </p>
+                </div>
+                <div class="art-pic">
+                    <img src="//cms-bucket.ws.126.net/2019/04/25/a6983547735248498406c15ead411af6.png?imageView&thumbnail=234y146&quality=45&interlace=1&enlarge=1&type=webp">
+                </div>
+            </li>
+            <li class="article-item">
+                <div class="art-content">
+                    <h3>普京与金正恩首度会晤握手后俩人都说了这句话</h3>
+                    <p>
+                        <strong>专题</strong>
+                        <span>3小时前</span>
+                    </p>
+                </div>
+                <div class="art-pic">
+                    <img src="//cms-bucket.ws.126.net/2019/04/25/a6983547735248498406c15ead411af6.png?imageView&thumbnail=234y146&quality=45&interlace=1&enlarge=1&type=webp">
+                </div>
+            </li>
+            <li class="article-item">
+                <div class="art-content">
+                    <h3>普京与金正恩首度会晤握手后俩人都说了这句话</h3>
+                    <p>
+                        <strong>专题</strong>
+                        <span>3小时前</span>
+                    </p>
+                </div>
+                <div class="art-pic">
+                    <img src="//cms-bucket.ws.126.net/2019/04/25/a6983547735248498406c15ead411af6.png?imageView&thumbnail=234y146&quality=45&interlace=1&enlarge=1&type=webp">
+                </div>
+            </li>
+            <li class="article-item">
+                <div class="art-content">
+                    <h3>普京与金正恩首度会晤握手后俩人都说了这句话</h3>
+                    <p>
+                        <strong>专题</strong>
+                        <span>3小时前</span>
+                    </p>
+                </div>
+                <div class="art-pic">
+                    <img src="//cms-bucket.ws.126.net/2019/04/25/a6983547735248498406c15ead411af6.png?imageView&thumbnail=234y146&quality=45&interlace=1&enlarge=1&type=webp">
+                </div>
+            </li>
+        </ul>
+    </div>
+</main>
+</body>
+</html>
+<script>
+    /*当我们的屏幕发生变化的时候，我们根据当前屏幕的大小跟画布大小的比例来调整布局的大小*/
+    /*最终的结果是我们的布局的宽度永远是100%*/
+    /*谷歌浏览器可能有点问题，在resize的时候，计算出来的数字可能不准确，不过大体其他的浏览器都是没问题的*/
+    (function(window,document){
+        var viewWidth = 720;
+        var pick = viewWidth / 100;
+        var mode = "resize";
+        function change(){
+            var view = document.documentElement.clientWidth || window.innerWidth;
+
+            if(view >= 720){
+                document.getElementsByTagName('html')[0].style.fontSize = 100 + 'px';
+                return;
+            }
+            document.getElementsByTagName('html')[0].style.fontSize = view / pick + 'px';
+        }
+        window.addEventListener(mode,change,!1);
+       document.addEventListener('DOMContentLoaded',change,!1);
+    })(window,document);
+</script>
