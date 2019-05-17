@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        * {
+          box-sizing:border-box;
+        }
+        body {
+            margin:0;
+            padding:0;
+        }
+        /*假设我们现在的页面是按照750的效果图来指定的*/
+        /* 1px = ? vw  100/750 = 0.133333333 */
+        /* 放大一百倍 100px = 13.333333vw */
+        /* 320的屏幕分辨率, font-size:42.6666666px */
+        /* 375的屏幕分辨率, font-size:49.9999999px */
+        /* 414的屏幕分辨率, font-size:55.1999999px */
+        /* 768的屏幕分辨率, font-size:102.39px */
+        html {
+            font-size:13.33333333vw;
+        }
+        .container {
+            background:darkred;
+            width:7.5rem; /*1vw = 页面的宽度 / 100  */
+            height:1rem;/*1wh = 页面的高度 / 100 */
+        }
+    </style>
+</head>
+<body>
+<div class="container"></div>
+</body>
+</html>

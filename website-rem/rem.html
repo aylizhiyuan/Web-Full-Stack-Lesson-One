@@ -332,13 +332,13 @@
         });
     });*/
      (function(window,document){
-     var viewWidth = 720;
+     var viewWidth = 750;
      var pick = viewWidth / 100;
      var mode = "resize";
      function change(){
      var view = document.documentElement.clientWidth || window.innerWidth;
 
-     if(view >= 720){
+     if(view >= 750){
      document.getElementsByTagName('html')[0].style.fontSize = 100 + 'px';
      return;
      }
